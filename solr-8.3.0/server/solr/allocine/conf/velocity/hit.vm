@@ -3,13 +3,19 @@
 
 <div class="result-document">
   #set( $keeps = ["titre", "synopsis", "genre", "predicted_genre","annee_prod"] )
+  #set( $fieldRenamer = {"titre" : "Titre", "synopsis" : "Synopsis", "genre" : "Genre", "predicted_genre" : "Genre (prédiction)","annee_prod" : "Année de Production"} )
 
   <table>
     #foreach( $fieldName in $doc.fieldNames )
       #if($keeps.contains($fieldName))
+        #if ($fieldRenamer.containsKey($fieldName))
+          #set ($normName=$fieldRenamer.get($fieldName))
+        #else
+          #set ($normname=$fieldName)
+        #end
         <tr>
           <th align="right" valign="top" style="field-name">
-            $esc.html($fieldName):
+            $esc.html($normName):
           </th> 
 
           <td align="left" valign="top">
