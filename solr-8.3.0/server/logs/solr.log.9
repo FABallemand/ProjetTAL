@@ -1,73 +1,546 @@
-2023-04-27 20:27:38.236 INFO  (main) [   ] o.e.j.u.log Logging initialized @895ms to org.eclipse.jetty.util.log.Slf4jLog
-2023-04-27 20:27:38.322 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.rewrite.handler.RedirectRegexRule.setReplacement(java.lang.String) in file:///home/fabien/TPS/2A/Algorithmes%20du%20Texte/ProjetTAL/solr-8.3.0/server/etc/jetty.xml
-2023-04-27 20:27:38.374 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
-2023-04-27 20:27:38.374 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.server.ServerConnector.setSoLingerTime(int) in file:///home/fabien/TPS/2A/Algorithmes%20du%20Texte/ProjetTAL/solr-8.3.0/server/etc/jetty-http.xml
-2023-04-27 20:27:38.384 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.19.v20190610; built: 2019-06-10T16:30:51.723Z; git: afcf563148970e98786327af5e07c261fda175d3; jvm 11.0.18+10-post-Ubuntu-0ubuntu122.04
-2023-04-27 20:27:38.404 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///home/fabien/TPS/2A/Algorithmes%20du%20Texte/ProjetTAL/solr-8.3.0/server/contexts/] at interval 0
-2023-04-27 20:27:38.687 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2023-04-27 20:27:38.698 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2023-04-27 20:27:38.698 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2023-04-27 20:27:38.700 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
-2023-04-27 20:27:38.775 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2023-04-27 20:27:38.782 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.3.0
-2023-04-27 20:27:38.782 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2023-04-27 20:27:38.782 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr-8.3.0
-2023-04-27 20:27:38.782 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2023-04-27T20:27:38.782468Z
-2023-04-27 20:27:38.820 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr-8.3.0/server/solr
-2023-04-27 20:27:38.831 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr-8.3.0/server/solr/solr.xml
-2023-04-27 20:27:38.886 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@771a660, but no JMX reporters were configured - adding default JMX reporter.
-2023-04-27 20:27:39.216 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
-2023-04-27 20:27:39.330 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@7e46d648[provider=null,keyStore=null,trustStore=null]
-2023-04-27 20:27:39.330 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@7e46d648[provider=null,keyStore=null,trustStore=null]
-2023-04-27 20:27:39.500 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@69d6a7cd[provider=null,keyStore=null,trustStore=null]
-2023-04-27 20:27:39.500 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@69d6a7cd[provider=null,keyStore=null,trustStore=null]
-2023-04-27 20:27:39.701 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2023-04-27 20:27:39.702 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
-2023-04-27 20:27:39.767 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@771a660
-2023-04-27 20:27:39.768 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@771a660
-2023-04-27 20:27:39.772 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@771a660
-2023-04-27 20:27:39.802 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr-8.3.0/server/solr
-2023-04-27 20:27:39.803 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [allocine]
-2023-04-27 20:27:39.857 INFO  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.c.SolrResourceLoader [allocine] Added 61 libs to classloader, from paths: [/home/fabien/TPS/2A/Algorithmes%20du%20Texte/ProjetTAL/solr-8.3.0/contrib/clustering/lib, /home/fabien/TPS/2A/Algorithmes%20du%20Texte/ProjetTAL/solr-8.3.0/contrib/extraction/lib, /home/fabien/TPS/2A/Algorithmes%20du%20Texte/ProjetTAL/solr-8.3.0/contrib/langid/lib, /home/fabien/TPS/2A/Algorithmes%20du%20Texte/ProjetTAL/solr-8.3.0/contrib/velocity/lib, /home/fabien/TPS/2A/Algorithmes%20du%20Texte/ProjetTAL/solr-8.3.0/dist]
-2023-04-27 20:27:39.870 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@43aaf813{/solr,file:///home/fabien/TPS/2A/Algorithmes%20du%20Texte/ProjetTAL/solr-8.3.0/server/solr-webapp/webapp/,AVAILABLE}{/home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr-8.3.0/server/solr-webapp/webapp}
-2023-04-27 20:27:39.876 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@6ed3f258{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
-2023-04-27 20:27:39.876 INFO  (main) [   ] o.e.j.s.Server Started @2537ms
-2023-04-27 20:27:40.075 INFO  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.3.0
-2023-04-27 20:27:40.201 WARN  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
-2023-04-27 20:27:40.243 INFO  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.s.IndexSchema [allocine] Schema name=default-config
-2023-04-27 20:27:40.649 INFO  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2023-04-27 20:27:40.684 INFO  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.c.CoreContainer Creating SolrCore 'allocine' using configuration from instancedir /home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr-8.3.0/server/solr/allocine, trusted=true
-2023-04-27 20:27:40.716 INFO  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.allocine' (registry 'solr.core.allocine') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@771a660
-2023-04-27 20:27:40.730 INFO  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.c.SolrCore [[allocine] ] Opening new SolrCore at [/home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr-8.3.0/server/solr/allocine], dataDir=[/home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr-8.3.0/server/solr/allocine/data/]
-2023-04-27 20:27:40.757 INFO  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2023-04-27 20:27:41.208 INFO  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2023-04-27 20:27:41.208 INFO  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2023-04-27 20:27:41.234 INFO  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2023-04-27 20:27:41.234 INFO  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2023-04-27 20:27:41.339 INFO  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.s.SolrIndexSearcher Opening [Searcher@30226d30[allocine] main]
-2023-04-27 20:27:41.352 INFO  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr-8.3.0/server/solr/allocine/conf
-2023-04-27 20:27:41.373 INFO  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2023-04-27 20:27:41.383 INFO  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2023-04-27 20:27:41.394 INFO  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2023-04-27 20:27:41.417 INFO  (searcherExecutor-10-thread-1-processing-x:allocine) [   x:allocine] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@30226d30[allocine] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(8.3.0):C719:[diagnostics={java.vendor=Ubuntu, os=Linux, java.version=11.0.18, java.vm.version=11.0.18+10-post-Ubuntu-0ubuntu122.04, lucene.version=8.3.0, os.arch=amd64, java.runtime.version=11.0.18+10-post-Ubuntu-0ubuntu122.04, source=flush, os.version=5.19.0-40-generic, timestamp=1682626571453}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
-2023-04-27 20:27:41.417 INFO  (searcherExecutor-10-thread-1-processing-x:allocine) [   x:allocine] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2023-04-27 20:27:41.417 INFO  (searcherExecutor-10-thread-1-processing-x:allocine) [   x:allocine] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2023-04-27 20:27:41.426 INFO  (searcherExecutor-10-thread-1-processing-x:allocine) [   x:allocine] o.a.s.c.SolrCore [allocine] Registered new searcher Searcher@30226d30[allocine] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(8.3.0):C719:[diagnostics={java.vendor=Ubuntu, os=Linux, java.version=11.0.18, java.vm.version=11.0.18+10-post-Ubuntu-0ubuntu122.04, lucene.version=8.3.0, os.arch=amd64, java.runtime.version=11.0.18+10-post-Ubuntu-0ubuntu122.04, source=flush, os.version=5.19.0-40-generic, timestamp=1682626571453}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
-2023-04-27 20:27:44.167 INFO  (qtp1842853283-23) [   x:allocine] o.a.s.c.S.Request [allocine]  webapp=/solr path=/browse params={q=titre:star} hits=6 status=0 QTime=97
-2023-04-27 20:27:44.167 INFO  (qtp1842853283-23) [   x:allocine] o.a.s.c.PluginBag Going to create a new queryResponseWriter with {type = queryResponseWriter,name = velocity,class = solr.VelocityResponseWriter,attributes = {startup=lazy, name=velocity, class=solr.VelocityResponseWriter},args = {template.base.dir=,solr.resource.loader.enabled=true,params.resource.loader.enabled=false}} 
-2023-04-27 20:27:45.328 INFO  (qtp1842853283-17) [   x:allocine] o.a.s.c.S.Request [allocine]  webapp=/solr path=/browse params={q=titre:star} hits=6 status=0 QTime=3
-2023-04-27 20:30:44.469 INFO  (qtp1842853283-18) [   x:allocine] o.a.s.c.S.Request [allocine]  webapp=/solr path=/browse params={q=titre:star} hits=6 status=0 QTime=0
-2023-04-27 20:30:45.699 INFO  (qtp1842853283-22) [   x:allocine] o.a.s.c.S.Request [allocine]  webapp=/solr path=/browse params={q=titre:star} hits=6 status=0 QTime=1
-2023-04-27 20:30:52.228 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@6ed3f258{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
-2023-04-27 20:30:52.228 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
-2023-04-27 20:30:52.230 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1721576219
-2023-04-27 20:30:52.230 INFO  (coreCloseExecutor-15-thread-1) [   x:allocine] o.a.s.c.SolrCore [allocine]  CLOSING SolrCore org.apache.solr.core.SolrCore@736055d9
-2023-04-27 20:30:52.230 INFO  (coreCloseExecutor-15-thread-1) [   x:allocine] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.allocine, tag=SolrCore@736055d9
-2023-04-27 20:30:52.231 INFO  (coreCloseExecutor-15-thread-1) [   x:allocine] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5b989d8a: rootName = null, domain = solr.core.allocine, service url = null, agent id = null] for registry solr.core.allocine / com.codahale.metrics.MetricRegistry@22e12615
-2023-04-27 20:30:52.268 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
-2023-04-27 20:30:52.269 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@2de50ee4: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@52259b24
-2023-04-27 20:30:52.275 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
-2023-04-27 20:30:52.275 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@21ac5eb4: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@7629bd99
-2023-04-27 20:30:52.284 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
-2023-04-27 20:30:52.285 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@52d6cd34: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@783756b1
-2023-04-27 20:30:52.298 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@43aaf813{/solr,null,UNAVAILABLE}{/home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr-8.3.0/server/solr-webapp/webapp}
+2023-04-27 20:40:27.463 INFO  (main) [   ] o.e.j.u.log Logging initialized @830ms to org.eclipse.jetty.util.log.Slf4jLog
+2023-04-27 20:40:27.536 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.rewrite.handler.RedirectRegexRule.setReplacement(java.lang.String) in file:///home/fabien/TPS/2A/Algorithmes%20du%20Texte/ProjetTAL/solr-8.3.0/server/etc/jetty.xml
+2023-04-27 20:40:27.581 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
+2023-04-27 20:40:27.581 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.server.ServerConnector.setSoLingerTime(int) in file:///home/fabien/TPS/2A/Algorithmes%20du%20Texte/ProjetTAL/solr-8.3.0/server/etc/jetty-http.xml
+2023-04-27 20:40:27.587 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.19.v20190610; built: 2019-06-10T16:30:51.723Z; git: afcf563148970e98786327af5e07c261fda175d3; jvm 11.0.18+10-post-Ubuntu-0ubuntu122.04
+2023-04-27 20:40:27.602 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///home/fabien/TPS/2A/Algorithmes%20du%20Texte/ProjetTAL/solr-8.3.0/server/contexts/] at interval 0
+2023-04-27 20:40:27.863 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2023-04-27 20:40:27.873 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2023-04-27 20:40:27.873 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2023-04-27 20:40:27.875 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2023-04-27 20:40:27.945 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2023-04-27 20:40:27.949 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.3.0
+2023-04-27 20:40:27.949 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2023-04-27 20:40:27.949 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr-8.3.0
+2023-04-27 20:40:27.950 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2023-04-27T20:40:27.950017Z
+2023-04-27 20:40:27.987 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr-8.3.0/server/solr
+2023-04-27 20:40:27.994 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr-8.3.0/server/solr/solr.xml
+2023-04-27 20:40:28.046 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@771a660, but no JMX reporters were configured - adding default JMX reporter.
+2023-04-27 20:40:28.385 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2023-04-27 20:40:28.497 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@c446b14[provider=null,keyStore=null,trustStore=null]
+2023-04-27 20:40:28.498 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@c446b14[provider=null,keyStore=null,trustStore=null]
+2023-04-27 20:40:28.623 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@37b72ea[provider=null,keyStore=null,trustStore=null]
+2023-04-27 20:40:28.623 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@37b72ea[provider=null,keyStore=null,trustStore=null]
+2023-04-27 20:40:28.793 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2023-04-27 20:40:28.796 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2023-04-27 20:40:28.868 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@771a660
+2023-04-27 20:40:28.871 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@771a660
+2023-04-27 20:40:28.877 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@771a660
+2023-04-27 20:40:28.912 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr-8.3.0/server/solr
+2023-04-27 20:40:28.912 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [allocine]
+2023-04-27 20:40:28.973 INFO  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.c.SolrResourceLoader [allocine] Added 61 libs to classloader, from paths: [/home/fabien/TPS/2A/Algorithmes%20du%20Texte/ProjetTAL/solr-8.3.0/contrib/clustering/lib, /home/fabien/TPS/2A/Algorithmes%20du%20Texte/ProjetTAL/solr-8.3.0/contrib/extraction/lib, /home/fabien/TPS/2A/Algorithmes%20du%20Texte/ProjetTAL/solr-8.3.0/contrib/langid/lib, /home/fabien/TPS/2A/Algorithmes%20du%20Texte/ProjetTAL/solr-8.3.0/contrib/velocity/lib, /home/fabien/TPS/2A/Algorithmes%20du%20Texte/ProjetTAL/solr-8.3.0/dist]
+2023-04-27 20:40:28.981 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@43aaf813{/solr,file:///home/fabien/TPS/2A/Algorithmes%20du%20Texte/ProjetTAL/solr-8.3.0/server/solr-webapp/webapp/,AVAILABLE}{/home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr-8.3.0/server/solr-webapp/webapp}
+2023-04-27 20:40:28.991 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@6ed3f258{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2023-04-27 20:40:28.992 INFO  (main) [   ] o.e.j.s.Server Started @2363ms
+2023-04-27 20:40:29.166 INFO  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.3.0
+2023-04-27 20:40:29.322 WARN  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
+2023-04-27 20:40:29.369 INFO  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.s.IndexSchema [allocine] Schema name=default-config
+2023-04-27 20:40:29.704 INFO  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2023-04-27 20:40:29.738 INFO  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.c.CoreContainer Creating SolrCore 'allocine' using configuration from instancedir /home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr-8.3.0/server/solr/allocine, trusted=true
+2023-04-27 20:40:29.764 INFO  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.allocine' (registry 'solr.core.allocine') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@771a660
+2023-04-27 20:40:29.787 INFO  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.c.SolrCore [[allocine] ] Opening new SolrCore at [/home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr-8.3.0/server/solr/allocine], dataDir=[/home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr-8.3.0/server/solr/allocine/data/]
+2023-04-27 20:40:29.822 INFO  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2023-04-27 20:40:30.308 INFO  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2023-04-27 20:40:30.308 INFO  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2023-04-27 20:40:30.329 INFO  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2023-04-27 20:40:30.329 INFO  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2023-04-27 20:40:30.440 INFO  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.s.SolrIndexSearcher Opening [Searcher@4af9758c[allocine] main]
+2023-04-27 20:40:30.447 INFO  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr-8.3.0/server/solr/allocine/conf
+2023-04-27 20:40:30.470 INFO  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2023-04-27 20:40:30.478 INFO  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2023-04-27 20:40:30.489 INFO  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2023-04-27 20:40:30.509 INFO  (searcherExecutor-10-thread-1-processing-x:allocine) [   x:allocine] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@4af9758c[allocine] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(8.3.0):C719:[diagnostics={java.vendor=Ubuntu, os=Linux, java.version=11.0.18, java.vm.version=11.0.18+10-post-Ubuntu-0ubuntu122.04, lucene.version=8.3.0, os.arch=amd64, java.runtime.version=11.0.18+10-post-Ubuntu-0ubuntu122.04, source=flush, os.version=5.19.0-40-generic, timestamp=1682626571453}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2023-04-27 20:40:30.510 INFO  (searcherExecutor-10-thread-1-processing-x:allocine) [   x:allocine] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2023-04-27 20:40:30.510 INFO  (searcherExecutor-10-thread-1-processing-x:allocine) [   x:allocine] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2023-04-27 20:40:30.524 INFO  (searcherExecutor-10-thread-1-processing-x:allocine) [   x:allocine] o.a.s.c.SolrCore [allocine] Registered new searcher Searcher@4af9758c[allocine] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(8.3.0):C719:[diagnostics={java.vendor=Ubuntu, os=Linux, java.version=11.0.18, java.vm.version=11.0.18+10-post-Ubuntu-0ubuntu122.04, lucene.version=8.3.0, os.arch=amd64, java.runtime.version=11.0.18+10-post-Ubuntu-0ubuntu122.04, source=flush, os.version=5.19.0-40-generic, timestamp=1682626571453}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2023-04-27 20:40:31.387 INFO  (qtp1842853283-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1682628031280} status=0 QTime=15
+2023-04-27 20:40:31.390 INFO  (qtp1842853283-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1682628031280} status=0 QTime=13
+2023-04-27 20:40:31.464 INFO  (qtp1842853283-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1682628031281} status=0 QTime=92
+2023-04-27 20:40:31.630 INFO  (qtp1842853283-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1682628031280} status=0 QTime=1
+2023-04-27 20:40:31.631 INFO  (qtp1842853283-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1682628031280} status=0 QTime=3
+2023-04-27 20:40:31.663 INFO  (qtp1842853283-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1682628031281} status=0 QTime=35
+2023-04-27 20:40:33.664 INFO  (qtp1842853283-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1682628031280} status=0 QTime=0
+2023-04-27 20:40:33.668 INFO  (qtp1842853283-22) [   x:allocine] o.a.s.c.S.Request [allocine]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1682628033652} status=0 QTime=3
+2023-04-27 20:40:33.668 INFO  (qtp1842853283-18) [   x:allocine] o.a.s.c.S.Request [allocine]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1682628031281&ts=1682628031281} status=503 QTime=1
+2023-04-27 20:40:33.669 INFO  (qtp1842853283-16) [   x:allocine] o.a.s.c.S.Request [allocine]  webapp=/solr path=/replication params={wt=json&command=details&_=1682628033653} status=0 QTime=2
+2023-04-27 20:40:33.680 INFO  (qtp1842853283-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1682628031281} status=0 QTime=16
+2023-04-27 20:40:33.684 INFO  (qtp1842853283-19) [   x:allocine] o.a.s.c.S.Request [allocine]  webapp=/solr path=/admin/system params={wt=json&_=1682628033652} status=0 QTime=16
+2023-04-27 20:40:39.308 INFO  (qtp1842853283-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1682628031280} status=0 QTime=0
+2023-04-27 20:40:39.317 INFO  (qtp1842853283-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1682628031281} status=0 QTime=10
+2023-04-27 20:40:59.352 ERROR (qtp1842853283-24) [   x:allocine] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Query Field 'description' is not a valid field name
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:279)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:198)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2576)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:803)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:582)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:424)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.solr.search.SyntaxError: Query Field 'description' is not a valid field name
+	at org.apache.solr.search.ExtendedDismaxQParser.checkFieldInSchema(ExtendedDismaxQParser.java:275)
+	at org.apache.solr.search.ExtendedDismaxQParser.checkFieldsInSchema(ExtendedDismaxQParser.java:287)
+	at org.apache.solr.search.ExtendedDismaxQParser.validateQueryFields(ExtendedDismaxQParser.java:226)
+	at org.apache.solr.search.ExtendedDismaxQParser.parse(ExtendedDismaxQParser.java:151)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 41 more
+Caused by: org.apache.solr.common.SolrException: undefined field: "description"
+	at org.apache.solr.schema.IndexSchema.getField(IndexSchema.java:1236)
+	at org.apache.solr.search.ExtendedDismaxQParser.checkFieldInSchema(ExtendedDismaxQParser.java:273)
+	... 46 more
+
+2023-04-27 20:40:59.352 INFO  (qtp1842853283-24) [   x:allocine] o.a.s.c.S.Request [allocine]  webapp=/solr path=/browse params={q=*:*&df=star&_=1682628039280} status=400 QTime=16
+2023-04-27 20:40:59.352 INFO  (qtp1842853283-24) [   x:allocine] o.a.s.c.PluginBag Going to create a new queryResponseWriter with {type = queryResponseWriter,name = velocity,class = solr.VelocityResponseWriter,attributes = {startup=lazy, name=velocity, class=solr.VelocityResponseWriter},args = {template.base.dir=,solr.resource.loader.enabled=true,params.resource.loader.enabled=false}} 
+2023-04-27 20:40:59.472 ERROR (qtp1842853283-24) [   x:allocine] o.a.v.rendering Left side ($response.facetFields.size()) of comparison operation has null value at facets.vm[line 6, column 35]
+2023-04-27 20:41:10.736 ERROR (qtp1842853283-24) [   x:allocine] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Query Field 'description' is not a valid field name
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:279)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:198)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2576)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:803)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:582)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:424)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.solr.search.SyntaxError: Query Field 'description' is not a valid field name
+	at org.apache.solr.search.ExtendedDismaxQParser.checkFieldInSchema(ExtendedDismaxQParser.java:275)
+	at org.apache.solr.search.ExtendedDismaxQParser.checkFieldsInSchema(ExtendedDismaxQParser.java:287)
+	at org.apache.solr.search.ExtendedDismaxQParser.validateQueryFields(ExtendedDismaxQParser.java:226)
+	at org.apache.solr.search.ExtendedDismaxQParser.parse(ExtendedDismaxQParser.java:151)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 41 more
+Caused by: org.apache.solr.common.SolrException: undefined field: "description"
+	at org.apache.solr.schema.IndexSchema.getField(IndexSchema.java:1236)
+	at org.apache.solr.search.ExtendedDismaxQParser.checkFieldInSchema(ExtendedDismaxQParser.java:273)
+	... 46 more
+
+2023-04-27 20:41:10.736 INFO  (qtp1842853283-24) [   x:allocine] o.a.s.c.S.Request [allocine]  webapp=/solr path=/browse params={q=titre:star} status=400 QTime=1
+2023-04-27 20:41:10.766 ERROR (qtp1842853283-24) [   x:allocine] o.a.v.rendering Left side ($response.facetFields.size()) of comparison operation has null value at facets.vm[line 6, column 35]
+2023-04-27 20:41:27.862 INFO  (qtp1842853283-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1682628031280} status=0 QTime=0
+2023-04-27 20:41:27.863 INFO  (qtp1842853283-18) [   x:allocine] o.a.s.c.S.Request [allocine]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1682628033652} status=0 QTime=0
+2023-04-27 20:41:27.865 INFO  (qtp1842853283-22) [   x:allocine] o.a.s.c.S.Request [allocine]  webapp=/solr path=/replication params={wt=json&command=details&_=1682628033653} status=0 QTime=1
+2023-04-27 20:41:27.866 INFO  (qtp1842853283-23) [   x:allocine] o.a.s.c.S.Request [allocine]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1682628031281&ts=1682628031281} status=503 QTime=0
+2023-04-27 20:41:27.879 INFO  (qtp1842853283-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1682628031281} status=0 QTime=17
+2023-04-27 20:41:27.905 INFO  (qtp1842853283-25) [   x:allocine] o.a.s.c.S.Request [allocine]  webapp=/solr path=/admin/system params={wt=json&_=1682628033652} status=0 QTime=36
+2023-04-27 20:41:33.186 ERROR (qtp1842853283-41) [   x:allocine] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Query Field 'description' is not a valid field name
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:279)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:198)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2576)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:803)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:582)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:424)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.solr.search.SyntaxError: Query Field 'description' is not a valid field name
+	at org.apache.solr.search.ExtendedDismaxQParser.checkFieldInSchema(ExtendedDismaxQParser.java:275)
+	at org.apache.solr.search.ExtendedDismaxQParser.checkFieldsInSchema(ExtendedDismaxQParser.java:287)
+	at org.apache.solr.search.ExtendedDismaxQParser.validateQueryFields(ExtendedDismaxQParser.java:226)
+	at org.apache.solr.search.ExtendedDismaxQParser.parse(ExtendedDismaxQParser.java:151)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 41 more
+Caused by: org.apache.solr.common.SolrException: undefined field: "description"
+	at org.apache.solr.schema.IndexSchema.getField(IndexSchema.java:1236)
+	at org.apache.solr.search.ExtendedDismaxQParser.checkFieldInSchema(ExtendedDismaxQParser.java:273)
+	... 46 more
+
+2023-04-27 20:41:33.186 INFO  (qtp1842853283-41) [   x:allocine] o.a.s.c.S.Request [allocine]  webapp=/solr path=/browse params={q=titre:star} status=400 QTime=1
+2023-04-27 20:41:33.237 ERROR (qtp1842853283-41) [   x:allocine] o.a.v.rendering Left side ($response.facetFields.size()) of comparison operation has null value at facets.vm[line 6, column 35]
+2023-04-27 20:55:02.481 INFO  (qtp1842853283-22) [   x:allocine] o.a.s.c.SolrResourceLoader Written confile configoverlay.json
+2023-04-27 20:55:02.510 INFO  (qtp1842853283-22) [   x:allocine] o.a.s.c.SolrResourceLoader [allocine] Added 61 libs to classloader, from paths: [/home/fabien/TPS/2A/Algorithmes%20du%20Texte/ProjetTAL/solr-8.3.0/contrib/clustering/lib, /home/fabien/TPS/2A/Algorithmes%20du%20Texte/ProjetTAL/solr-8.3.0/contrib/extraction/lib, /home/fabien/TPS/2A/Algorithmes%20du%20Texte/ProjetTAL/solr-8.3.0/contrib/langid/lib, /home/fabien/TPS/2A/Algorithmes%20du%20Texte/ProjetTAL/solr-8.3.0/contrib/velocity/lib, /home/fabien/TPS/2A/Algorithmes%20du%20Texte/ProjetTAL/solr-8.3.0/dist]
+2023-04-27 20:55:02.530 INFO  (qtp1842853283-22) [   x:allocine] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.3.0
+2023-04-27 20:55:02.573 WARN  (qtp1842853283-22) [   x:allocine] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
+2023-04-27 20:55:02.588 INFO  (qtp1842853283-22) [   x:allocine] o.a.s.s.IndexSchema [allocine] Schema name=default-config
+2023-04-27 20:55:02.711 INFO  (qtp1842853283-22) [   x:allocine] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2023-04-27 20:55:02.728 INFO  (qtp1842853283-22) [   x:allocine] o.a.s.c.CoreContainer Reloading SolrCore 'allocine' using configuration from instancedir /home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr-8.3.0/server/solr/allocine
+2023-04-27 20:55:02.748 INFO  (qtp1842853283-22) [   x:allocine] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.allocine' (registry 'solr.core.allocine') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@771a660
+2023-04-27 20:55:02.748 INFO  (qtp1842853283-22) [   x:allocine] o.a.s.c.SolrCore [[allocine] ] Opening new SolrCore at [/home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr-8.3.0/server/solr/allocine], dataDir=[/home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr-8.3.0/server/solr/allocine/data/]
+2023-04-27 20:55:02.754 INFO  (qtp1842853283-22) [   x:allocine] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2023-04-27 20:55:02.809 INFO  (qtp1842853283-22) [   x:allocine] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2023-04-27 20:55:02.809 INFO  (qtp1842853283-22) [   x:allocine] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2023-04-27 20:55:02.812 INFO  (qtp1842853283-22) [   x:allocine] o.a.s.s.SolrIndexSearcher Opening [Searcher@7146b95e[allocine] main]
+2023-04-27 20:55:02.812 INFO  (qtp1842853283-22) [   x:allocine] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr-8.3.0/server/solr/allocine/conf
+2023-04-27 20:55:02.812 INFO  (qtp1842853283-22) [   x:allocine] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2023-04-27 20:55:02.813 INFO  (qtp1842853283-22) [   x:allocine] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2023-04-27 20:55:02.813 INFO  (qtp1842853283-22) [   x:allocine] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2023-04-27 20:55:02.818 INFO  (searcherExecutor-15-thread-1-processing-x:allocine) [   x:allocine] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@7146b95e[allocine] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(8.3.0):C719:[diagnostics={java.vendor=Ubuntu, os=Linux, java.version=11.0.18, java.vm.version=11.0.18+10-post-Ubuntu-0ubuntu122.04, lucene.version=8.3.0, os.arch=amd64, java.runtime.version=11.0.18+10-post-Ubuntu-0ubuntu122.04, source=flush, os.version=5.19.0-40-generic, timestamp=1682626571453}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2023-04-27 20:55:02.819 INFO  (searcherExecutor-15-thread-1-processing-x:allocine) [   x:allocine] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2023-04-27 20:55:02.819 INFO  (searcherExecutor-15-thread-1-processing-x:allocine) [   x:allocine] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2023-04-27 20:55:02.824 INFO  (searcherExecutor-15-thread-1-processing-x:allocine) [   x:allocine] o.a.s.c.SolrCore [allocine] Registered new searcher Searcher@7146b95e[allocine] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(8.3.0):C719:[diagnostics={java.vendor=Ubuntu, os=Linux, java.version=11.0.18, java.vm.version=11.0.18+10-post-Ubuntu-0ubuntu122.04, lucene.version=8.3.0, os.arch=amd64, java.runtime.version=11.0.18+10-post-Ubuntu-0ubuntu122.04, source=flush, os.version=5.19.0-40-generic, timestamp=1682626571453}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2023-04-27 20:55:02.827 INFO  (qtp1842853283-22) [   x:allocine] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2023-04-27 20:55:02.830 INFO  (qtp1842853283-22) [   x:allocine] o.a.s.s.SolrIndexSearcher Opening [Searcher@6a1c4717[allocine] main]
+2023-04-27 20:55:02.831 INFO  (qtp1842853283-22) [   x:allocine] o.a.s.h.SolrConfigHandler Executed config commands successfully and persited to File System [{"set-property":{"requestDispatcher.requestParsers.enableRemoteStreaming":true}}, {"set-property":{"requestDispatcher.requestParsers.enableStreamBody":true}}]
+2023-04-27 20:55:02.831 INFO  (qtp1842853283-22) [   x:allocine] o.a.s.c.SolrCore [allocine]  CLOSING SolrCore org.apache.solr.core.SolrCore@71a048db
+2023-04-27 20:55:02.831 INFO  (qtp1842853283-22) [   x:allocine] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.allocine, tag=SolrCore@71a048db
+2023-04-27 20:55:02.832 INFO  (qtp1842853283-22) [   x:allocine] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@6688256f: rootName = null, domain = solr.core.allocine, service url = null, agent id = null] for registry solr.core.allocine / com.codahale.metrics.MetricRegistry@26c380f7
+2023-04-27 20:55:02.832 INFO  (searcherExecutor-15-thread-1-processing-x:allocine) [   x:allocine] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@6a1c4717[allocine] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(8.3.0):C719:[diagnostics={java.vendor=Ubuntu, os=Linux, java.version=11.0.18, java.vm.version=11.0.18+10-post-Ubuntu-0ubuntu122.04, lucene.version=8.3.0, os.arch=amd64, java.runtime.version=11.0.18+10-post-Ubuntu-0ubuntu122.04, source=flush, os.version=5.19.0-40-generic, timestamp=1682626571453}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2023-04-27 20:55:02.832 INFO  (searcherExecutor-15-thread-1-processing-x:allocine) [   x:allocine] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2023-04-27 20:55:02.839 INFO  (searcherExecutor-15-thread-1-processing-x:allocine) [   x:allocine] o.a.s.c.SolrCore [allocine] Registered new searcher Searcher@6a1c4717[allocine] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(8.3.0):C719:[diagnostics={java.vendor=Ubuntu, os=Linux, java.version=11.0.18, java.vm.version=11.0.18+10-post-Ubuntu-0ubuntu122.04, lucene.version=8.3.0, os.arch=amd64, java.runtime.version=11.0.18+10-post-Ubuntu-0ubuntu122.04, source=flush, os.version=5.19.0-40-generic, timestamp=1682626571453}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2023-04-27 20:55:23.382 INFO  (qtp1842853283-23) [   x:allocine] o.a.s.s.SolrIndexSearcher Opening [Searcher@733252f8[allocine] realtime]
+2023-04-27 20:55:23.383 INFO  (qtp1842853283-23) [   x:allocine] o.a.s.u.p.LogUpdateProcessorFactory [allocine]  webapp=/solr path=/update params={stream.body=<delete><query>*:*</query></delete>}{deleteByQuery=*:* (-1764364305942183936)} 0 67
+2023-04-27 20:55:34.860 INFO  (qtp1842853283-18) [   x:allocine] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1764364317999759360,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2023-04-27 20:55:34.860 INFO  (qtp1842853283-18) [   x:allocine] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@50aefa96 commitCommandVersion:1764364317999759360
+2023-04-27 20:55:34.878 INFO  (qtp1842853283-18) [   x:allocine] o.a.s.s.SolrIndexSearcher Opening [Searcher@342d4b13[allocine] main]
+2023-04-27 20:55:34.878 INFO  (qtp1842853283-18) [   x:allocine] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2023-04-27 20:55:34.878 INFO  (searcherExecutor-15-thread-1-processing-x:allocine) [   x:allocine] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@342d4b13[allocine] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2023-04-27 20:55:34.878 INFO  (searcherExecutor-15-thread-1-processing-x:allocine) [   x:allocine] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2023-04-27 20:55:34.880 INFO  (searcherExecutor-15-thread-1-processing-x:allocine) [   x:allocine] o.a.s.c.SolrCore [allocine] Registered new searcher Searcher@342d4b13[allocine] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2023-04-27 20:55:34.882 INFO  (qtp1842853283-18) [   x:allocine] o.a.s.u.p.LogUpdateProcessorFactory [allocine]  webapp=/solr path=/update params={commit=true}{commit=} 0 22
+2023-04-27 20:56:29.495 INFO  (qtp1842853283-24) [   x:allocine] o.a.s.u.p.LogUpdateProcessorFactory [allocine]  webapp=/solr path=/update params={fileupload=../data/test_results.csv}{} 0 12
+2023-04-27 20:56:29.495 ERROR (qtp1842853283-24) [   x:allocine] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: missing content stream
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:63)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:198)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2576)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:803)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:582)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:424)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-04-27 20:56:44.189 INFO  (qtp1842853283-41) [   x:allocine] o.a.s.u.p.LogUpdateProcessorFactory [allocine]  webapp=/solr path=/update/csv params={}{add=[0 (1764364390184779776), 1 (1764364390245597184), 2 (1764364390252937216), 3 (1764364390256082944), 4 (1764364390258180096), 5 (1764364390261325824), 6 (1764364390264471552), 7 (1764364390267617280), 8 (1764364390269714432), 9 (1764364390270763008), ... (719 adds)]} 0 493
+2023-04-27 20:56:58.755 INFO  (commitScheduler-17-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2023-04-27 20:56:58.755 INFO  (commitScheduler-17-thread-1) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@50aefa96 commitCommandVersion:0
+2023-04-27 20:56:59.013 INFO  (commitScheduler-17-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@411640[allocine] realtime]
+2023-04-27 20:56:59.016 INFO  (commitScheduler-17-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2023-04-27 20:57:07.572 INFO  (qtp1842853283-42) [   x:allocine] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1764364415215337472,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2023-04-27 20:57:07.572 INFO  (qtp1842853283-42) [   x:allocine] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
+2023-04-27 20:57:07.573 INFO  (qtp1842853283-42) [   x:allocine] o.a.s.s.SolrIndexSearcher Opening [Searcher@16c592c2[allocine] main]
+2023-04-27 20:57:07.573 INFO  (qtp1842853283-42) [   x:allocine] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2023-04-27 20:57:07.573 INFO  (searcherExecutor-15-thread-1-processing-x:allocine) [   x:allocine] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@16c592c2[allocine] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(8.3.0):C719:[diagnostics={os=Linux, java.vendor=Ubuntu, java.version=11.0.18, java.vm.version=11.0.18+10-post-Ubuntu-0ubuntu122.04, lucene.version=8.3.0, os.arch=amd64, java.runtime.version=11.0.18+10-post-Ubuntu-0ubuntu122.04, source=flush, os.version=5.19.0-40-generic, timestamp=1682629018953}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2023-04-27 20:57:07.573 INFO  (searcherExecutor-15-thread-1-processing-x:allocine) [   x:allocine] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2023-04-27 20:57:07.578 INFO  (searcherExecutor-15-thread-1-processing-x:allocine) [   x:allocine] o.a.s.c.SolrCore [allocine] Registered new searcher Searcher@16c592c2[allocine] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(8.3.0):C719:[diagnostics={os=Linux, java.vendor=Ubuntu, java.version=11.0.18, java.vm.version=11.0.18+10-post-Ubuntu-0ubuntu122.04, lucene.version=8.3.0, os.arch=amd64, java.runtime.version=11.0.18+10-post-Ubuntu-0ubuntu122.04, source=flush, os.version=5.19.0-40-generic, timestamp=1682629018953}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2023-04-27 20:57:07.580 INFO  (qtp1842853283-42) [   x:allocine] o.a.s.u.p.LogUpdateProcessorFactory [allocine]  webapp=/solr path=/update params={commit=true}{commit=} 0 8
+2023-04-27 20:57:24.999 ERROR (qtp1842853283-23) [   x:allocine] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Query Field 'description' is not a valid field name
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:279)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:198)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2576)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:803)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:582)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:424)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.solr.search.SyntaxError: Query Field 'description' is not a valid field name
+	at org.apache.solr.search.ExtendedDismaxQParser.checkFieldInSchema(ExtendedDismaxQParser.java:275)
+	at org.apache.solr.search.ExtendedDismaxQParser.checkFieldsInSchema(ExtendedDismaxQParser.java:287)
+	at org.apache.solr.search.ExtendedDismaxQParser.validateQueryFields(ExtendedDismaxQParser.java:226)
+	at org.apache.solr.search.ExtendedDismaxQParser.parse(ExtendedDismaxQParser.java:151)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 41 more
+Caused by: org.apache.solr.common.SolrException: undefined field: "description"
+	at org.apache.solr.schema.IndexSchema.getField(IndexSchema.java:1236)
+	at org.apache.solr.search.ExtendedDismaxQParser.checkFieldInSchema(ExtendedDismaxQParser.java:273)
+	... 46 more
+
+2023-04-27 20:57:24.999 INFO  (qtp1842853283-23) [   x:allocine] o.a.s.c.S.Request [allocine]  webapp=/solr path=/browse params={q=titre:star} status=400 QTime=1
+2023-04-27 20:57:25.000 INFO  (qtp1842853283-23) [   x:allocine] o.a.s.c.PluginBag Going to create a new queryResponseWriter with {type = queryResponseWriter,name = velocity,class = solr.VelocityResponseWriter,attributes = {startup=lazy, name=velocity, class=solr.VelocityResponseWriter},args = {template.base.dir=,solr.resource.loader.enabled=true,params.resource.loader.enabled=false}} 
+2023-04-27 20:57:25.095 ERROR (qtp1842853283-23) [   x:allocine] o.a.v.rendering Left side ($response.facetFields.size()) of comparison operation has null value at facets.vm[line 6, column 35]
+2023-04-27 20:57:29.545 INFO  (qtp1842853283-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1682629049474} status=0 QTime=0
+2023-04-27 20:57:29.562 INFO  (qtp1842853283-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1682629049474} status=0 QTime=17
+2023-04-27 20:57:29.562 INFO  (qtp1842853283-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1682629049474} status=0 QTime=16
+2023-04-27 20:57:31.733 INFO  (qtp1842853283-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1682629049474} status=0 QTime=0
+2023-04-27 20:57:31.733 INFO  (qtp1842853283-16) [   x:allocine] o.a.s.c.S.Request [allocine]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1682629051727} status=0 QTime=0
+2023-04-27 20:57:31.741 INFO  (qtp1842853283-25) [   x:allocine] o.a.s.c.S.Request [allocine]  webapp=/solr path=/replication params={wt=json&command=details&_=1682629051727} status=0 QTime=4
+2023-04-27 20:57:31.743 INFO  (qtp1842853283-48) [   x:allocine] o.a.s.c.S.Request [allocine]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1682629049474&ts=1682629049474} status=503 QTime=0
+2023-04-27 20:57:31.749 INFO  (qtp1842853283-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1682629049474} status=0 QTime=15
+2023-04-27 20:57:31.756 INFO  (qtp1842853283-18) [   x:allocine] o.a.s.c.S.Request [allocine]  webapp=/solr path=/admin/system params={wt=json&_=1682629051727} status=0 QTime=13
+2023-04-27 20:57:40.243 ERROR (qtp1842853283-42) [   x:allocine] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Query Field 'description' is not a valid field name
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:279)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:198)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2576)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:803)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:582)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:424)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.solr.search.SyntaxError: Query Field 'description' is not a valid field name
+	at org.apache.solr.search.ExtendedDismaxQParser.checkFieldInSchema(ExtendedDismaxQParser.java:275)
+	at org.apache.solr.search.ExtendedDismaxQParser.checkFieldsInSchema(ExtendedDismaxQParser.java:287)
+	at org.apache.solr.search.ExtendedDismaxQParser.validateQueryFields(ExtendedDismaxQParser.java:226)
+	at org.apache.solr.search.ExtendedDismaxQParser.parse(ExtendedDismaxQParser.java:151)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 41 more
+Caused by: org.apache.solr.common.SolrException: undefined field: "description"
+	at org.apache.solr.schema.IndexSchema.getField(IndexSchema.java:1236)
+	at org.apache.solr.search.ExtendedDismaxQParser.checkFieldInSchema(ExtendedDismaxQParser.java:273)
+	... 46 more
+
+2023-04-27 20:57:40.244 INFO  (qtp1842853283-42) [   x:allocine] o.a.s.c.S.Request [allocine]  webapp=/solr path=/browse params={q=titre:star} status=400 QTime=1
+2023-04-27 20:57:40.285 ERROR (qtp1842853283-42) [   x:allocine] o.a.v.rendering Left side ($response.facetFields.size()) of comparison operation has null value at facets.vm[line 6, column 35]
+2023-04-27 20:58:01.504 INFO  (qtp1842853283-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1682629049474} status=0 QTime=0
+2023-04-27 20:58:01.512 INFO  (qtp1842853283-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1682629049474} status=0 QTime=8
+2023-04-27 20:58:14.319 ERROR (qtp1842853283-42) [   x:allocine] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Query Field 'description' is not a valid field name
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:279)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:198)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2576)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:803)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:582)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:424)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.solr.search.SyntaxError: Query Field 'description' is not a valid field name
+	at org.apache.solr.search.ExtendedDismaxQParser.checkFieldInSchema(ExtendedDismaxQParser.java:275)
+	at org.apache.solr.search.ExtendedDismaxQParser.checkFieldsInSchema(ExtendedDismaxQParser.java:287)
+	at org.apache.solr.search.ExtendedDismaxQParser.validateQueryFields(ExtendedDismaxQParser.java:226)
+	at org.apache.solr.search.ExtendedDismaxQParser.parse(ExtendedDismaxQParser.java:151)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 41 more
+Caused by: org.apache.solr.common.SolrException: undefined field: "description"
+	at org.apache.solr.schema.IndexSchema.getField(IndexSchema.java:1236)
+	at org.apache.solr.search.ExtendedDismaxQParser.checkFieldInSchema(ExtendedDismaxQParser.java:273)
+	... 46 more
+
+2023-04-27 20:58:14.319 INFO  (qtp1842853283-42) [   x:allocine] o.a.s.c.S.Request [allocine]  webapp=/solr path=/browse params={q=titre:star} status=400 QTime=1
+2023-04-27 20:58:14.341 ERROR (qtp1842853283-42) [   x:allocine] o.a.v.rendering Left side ($response.facetFields.size()) of comparison operation has null value at facets.vm[line 6, column 35]
+2023-04-27 21:01:59.713 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@6ed3f258{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2023-04-27 21:01:59.714 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2023-04-27 21:01:59.715 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1721576219
+2023-04-27 21:01:59.716 INFO  (coreCloseExecutor-19-thread-1) [   x:allocine] o.a.s.c.SolrCore [allocine]  CLOSING SolrCore org.apache.solr.core.SolrCore@97cc8ea
+2023-04-27 21:01:59.716 INFO  (coreCloseExecutor-19-thread-1) [   x:allocine] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.allocine, tag=SolrCore@97cc8ea
+2023-04-27 21:01:59.717 INFO  (coreCloseExecutor-19-thread-1) [   x:allocine] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@3663c92d: rootName = null, domain = solr.core.allocine, service url = null, agent id = null] for registry solr.core.allocine / com.codahale.metrics.MetricRegistry@26c380f7
+2023-04-27 21:01:59.734 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2023-04-27 21:01:59.735 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@782bf610: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@74c0fe16
+2023-04-27 21:01:59.736 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2023-04-27 21:01:59.736 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@153cd6bb: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@23c34609
+2023-04-27 21:01:59.737 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2023-04-27 21:01:59.737 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@61d84e08: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@6e438fa5
+2023-04-27 21:01:59.747 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@43aaf813{/solr,null,UNAVAILABLE}{/home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr-8.3.0/server/solr-webapp/webapp}

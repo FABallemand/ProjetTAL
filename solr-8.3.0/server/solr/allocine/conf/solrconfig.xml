@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
  Licensed to the Apache Software Foundation (ASF) under one or more
  contributor license agreements.  See the NOTICE file distributed with
@@ -117,7 +117,7 @@
        solr.RAMDirectoryFactory is memory based and not persistent.
     -->
   <directoryFactory name="DirectoryFactory"
-                    class="${solr.directoryFactory:solr.NRTCachingDirectoryFactory}"/>
+    class="${solr.directoryFactory:solr.NRTCachingDirectoryFactory}" />
 
   <!-- The CodecFactory for defining the format of the inverted index.
        The default implementation is SchemaCodecFactory, which is the official Lucene
@@ -131,7 +131,7 @@
        between the existing compression modes in the default codec: "BEST_SPEED" (default)
        or "BEST_COMPRESSION".
   -->
-  <codecFactory class="solr.SchemaCodecFactory"/>
+  <codecFactory class="solr.SchemaCodecFactory" />
 
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
        Index Config - These settings control low-level behavior of indexing
@@ -425,9 +425,9 @@
                       and initialSize parameters are ignored.
       -->
     <filterCache class="solr.FastLRUCache"
-                 size="512"
-                 initialSize="512"
-                 autowarmCount="0"/>
+      size="512"
+      initialSize="512"
+      autowarmCount="0" />
 
     <!-- Query Result Cache
 
@@ -438,9 +438,9 @@
                        to occupy
       -->
     <queryResultCache class="solr.LRUCache"
-                      size="512"
-                      initialSize="512"
-                      autowarmCount="0"/>
+      size="512"
+      initialSize="512"
+      autowarmCount="0" />
 
     <!-- Document Cache
 
@@ -449,17 +449,17 @@
          this cache will not be autowarmed.
       -->
     <documentCache class="solr.LRUCache"
-                   size="512"
-                   initialSize="512"
-                   autowarmCount="0"/>
+      size="512"
+      initialSize="512"
+      autowarmCount="0" />
 
     <!-- custom cache currently used by block join -->
     <cache name="perSegFilter"
-           class="solr.search.LRUCache"
-           size="10"
-           initialSize="0"
-           autowarmCount="10"
-           regenerator="solr.NoOpRegenerator" />
+      class="solr.search.LRUCache"
+      size="10"
+      initialSize="0"
+      autowarmCount="10"
+      regenerator="solr.NoOpRegenerator" />
 
     <!-- Field Value Cache
 
@@ -807,8 +807,8 @@
 
     -->
   <requestHandler name="/update/extract"
-                  startup="lazy"
-                  class="solr.extraction.ExtractingRequestHandler" >
+    startup="lazy"
+    class="solr.extraction.ExtractingRequestHandler">
     <lst name="defaults">
       <str name="lowernames">true</str>
       <str name="fmap.content">_text_</str>
@@ -949,7 +949,7 @@
 
        http://wiki.apache.org/solr/TermVectorComponent
     -->
-  <searchComponent name="tvComponent" class="solr.TermVectorComponent"/>
+  <searchComponent name="tvComponent" class="solr.TermVectorComponent" />
 
   <!-- A request handler for demonstrating the term vector component
 
@@ -967,7 +967,8 @@
     </arr>
   </requestHandler>
 
-  <!-- Clustering Component. (Omitted here. See the default Solr example for a typical configuration.) -->
+  <!-- Clustering Component. (Omitted here. See the default Solr example for a typical
+  configuration.) -->
 
   <!-- Terms Component
 
@@ -976,7 +977,7 @@
        A component to return terms and document frequency of those
        terms
     -->
-  <searchComponent name="terms" class="solr.TermsComponent"/>
+  <searchComponent name="terms" class="solr.TermsComponent" />
 
   <!-- A request handler for demonstrating the terms component -->
   <requestHandler name="/terms" class="solr.SearchHandler" startup="lazy">
@@ -998,7 +999,7 @@
        results for a given query regardless of the normal lucene
        scoring.
     -->
-  <searchComponent name="elevator" class="solr.QueryElevationComponent" >
+  <searchComponent name="elevator" class="solr.QueryElevationComponent">
     <!-- pick a fieldType to analyze queries -->
     <str name="queryFieldType">string</str>
   </searchComponent>
@@ -1022,8 +1023,8 @@
       <!-- Configure the standard fragmenter -->
       <!-- This could most likely be commented out in the "default" case -->
       <fragmenter name="gap"
-                  default="true"
-                  class="solr.highlight.GapFragmenter">
+        default="true"
+        class="solr.highlight.GapFragmenter">
         <lst name="defaults">
           <int name="hl.fragsize">100</int>
         </lst>
@@ -1033,7 +1034,7 @@
            (for sentence extraction)
         -->
       <fragmenter name="regex"
-                  class="solr.highlight.RegexFragmenter">
+        class="solr.highlight.RegexFragmenter">
         <lst name="defaults">
           <!-- slightly smaller fragsizes work better because of slop -->
           <int name="hl.fragsize">70</int>
@@ -1046,8 +1047,8 @@
 
       <!-- Configure the standard formatter -->
       <formatter name="html"
-                 default="true"
-                 class="solr.highlight.HtmlFormatter">
+        default="true"
+        class="solr.highlight.HtmlFormatter">
         <lst name="defaults">
           <str name="hl.simple.pre"><![CDATA[<em>]]></str>
           <str name="hl.simple.post"><![CDATA[</em>]]></str>
@@ -1056,25 +1057,25 @@
 
       <!-- Configure the standard encoder -->
       <encoder name="html"
-               class="solr.highlight.HtmlEncoder" />
+        class="solr.highlight.HtmlEncoder" />
 
       <!-- Configure the standard fragListBuilder -->
       <fragListBuilder name="simple"
-                       class="solr.highlight.SimpleFragListBuilder"/>
+        class="solr.highlight.SimpleFragListBuilder" />
 
       <!-- Configure the single fragListBuilder -->
       <fragListBuilder name="single"
-                       class="solr.highlight.SingleFragListBuilder"/>
+        class="solr.highlight.SingleFragListBuilder" />
 
       <!-- Configure the weighted fragListBuilder -->
       <fragListBuilder name="weighted"
-                       default="true"
-                       class="solr.highlight.WeightedFragListBuilder"/>
+        default="true"
+        class="solr.highlight.WeightedFragListBuilder" />
 
       <!-- default tag FragmentsBuilder -->
       <fragmentsBuilder name="default"
-                        default="true"
-                        class="solr.highlight.ScoreOrderFragmentsBuilder">
+        default="true"
+        class="solr.highlight.ScoreOrderFragmentsBuilder">
         <!--
         <lst name="defaults">
           <str name="hl.multiValuedSeparatorChar">/</str>
@@ -1084,7 +1085,7 @@
 
       <!-- multi-colored tag FragmentsBuilder -->
       <fragmentsBuilder name="colored"
-                        class="solr.highlight.ScoreOrderFragmentsBuilder">
+        class="solr.highlight.ScoreOrderFragmentsBuilder">
         <lst name="defaults">
           <str name="hl.tag.pre"><![CDATA[
                <b style="background:yellow">,<b style="background:lawgreen">,
@@ -1097,8 +1098,8 @@
       </fragmentsBuilder>
 
       <boundaryScanner name="default"
-                       default="true"
-                       class="solr.highlight.SimpleBoundaryScanner">
+        default="true"
+        class="solr.highlight.SimpleBoundaryScanner">
         <lst name="defaults">
           <str name="hl.bs.maxScan">10</str>
           <str name="hl.bs.chars">.,!? &#9;&#10;&#13;</str>
@@ -1106,7 +1107,7 @@
       </boundaryScanner>
 
       <boundaryScanner name="breakIterator"
-                       class="solr.highlight.BreakIteratorBoundaryScanner">
+        class="solr.highlight.BreakIteratorBoundaryScanner">
         <lst name="defaults">
           <!-- type should be one of CHARACTER, WORD(default), LINE and SENTENCE -->
           <str name="hl.bs.type">WORD</str>
@@ -1143,15 +1144,15 @@
 
        See http://wiki.apache.org/solr/GuessingFieldTypes
     -->
-  <updateProcessor class="solr.UUIDUpdateProcessorFactory" name="uuid"/>
-  <updateProcessor class="solr.RemoveBlankFieldUpdateProcessorFactory" name="remove-blank"/>
+  <updateProcessor class="solr.UUIDUpdateProcessorFactory" name="uuid" />
+  <updateProcessor class="solr.RemoveBlankFieldUpdateProcessorFactory" name="remove-blank" />
   <updateProcessor class="solr.FieldNameMutatingUpdateProcessorFactory" name="field-name-mutating">
     <str name="pattern">[^\w-\.]</str>
     <str name="replacement">_</str>
   </updateProcessor>
-  <updateProcessor class="solr.ParseBooleanFieldUpdateProcessorFactory" name="parse-boolean"/>
-  <updateProcessor class="solr.ParseLongFieldUpdateProcessorFactory" name="parse-long"/>
-  <updateProcessor class="solr.ParseDoubleFieldUpdateProcessorFactory" name="parse-double"/>
+  <updateProcessor class="solr.ParseBooleanFieldUpdateProcessorFactory" name="parse-boolean" />
+  <updateProcessor class="solr.ParseLongFieldUpdateProcessorFactory" name="parse-long" />
+  <updateProcessor class="solr.ParseDoubleFieldUpdateProcessorFactory" name="parse-double" />
   <updateProcessor class="solr.ParseDateFieldUpdateProcessorFactory" name="parse-date">
     <arr name="format">
       <str>yyyy-MM-dd['T'[HH:mm[:ss[.SSS]][z</str>
@@ -1194,11 +1195,12 @@
   </updateProcessor>
 
   <!-- The update.autoCreateFields property can be turned to false to disable schemaless mode -->
-  <updateRequestProcessorChain name="add-unknown-fields-to-the-schema" default="${update.autoCreateFields:true}"
-           processor="uuid,remove-blank,field-name-mutating,parse-boolean,parse-long,parse-double,parse-date,add-schema-fields">
-    <processor class="solr.LogUpdateProcessorFactory"/>
-    <processor class="solr.DistributedUpdateProcessorFactory"/>
-    <processor class="solr.RunUpdateProcessorFactory"/>
+  <updateRequestProcessorChain name="add-unknown-fields-to-the-schema"
+    default="${update.autoCreateFields:true}"
+    processor="uuid,remove-blank,field-name-mutating,parse-boolean,parse-long,parse-double,parse-date,add-schema-fields">
+    <processor class="solr.LogUpdateProcessorFactory" />
+    <processor class="solr.DistributedUpdateProcessorFactory" />
+    <processor class="solr.RunUpdateProcessorFactory" />
   </updateRequestProcessorChain>
 
   <!-- Deduplication
@@ -1366,4 +1368,59 @@
       EditorialMarkerFactory will do exactly that:
      <transformer name="qecBooster" class="org.apache.solr.response.transform.EditorialMarkerFactory" />
     -->
+
+  <requestHandler name="/browse" class="solr.SearchHandler" useParams="query,facets,velocity,browse">
+    <lst name="defaults">
+      <str name="echoParams">all</str>
+
+      <!-- champ de recherche par défaut -->
+      <str name="df">synopsis</str>
+
+      <!-- Facettes qui seront calculées (disponibles donc pour affichage et filtrage des résultats) -->
+      <str name="facet">on</str>
+      <str name="facet.field">nationalite_str</str>
+      <str name="facet.field">acteur_2_str</str>
+      <str name="facet.field">langues_str</str>
+      <str name="facet.field">predicted_genre_str</str>
+      <str name="facet.field">acteur_1_str</str>
+      <str name="facet.field">realisateurs_str</str>
+      <str name="facet.field">titre_str</str>
+      <str name="facet.field">acteur_3_str</str>
+      <str name="facet.field">genre_str</str>
+      <str name="facet.field">couleur_str</str>
+      <str name="facet.field">synopsis_str</str>
+      <str name="facet.field">type_film_str</str>
+      <!-- nombre maximal d'items à afficher par facette -->
+      <str name="facet.limit">15</str>
+
+      <!-- Mise en surbrillance  -->
+      <!--     Paramètres de base     -->
+      <str name="hl">on</str>
+      <str name="hl.fl">content features title name description</str>
+      <str name="hl.encoder">html</str>
+      <str name="hl.simple.pre">&lt;span style='background-color:yellow'&gt;&lt;b&gt;</str>
+      <str name="hl.simple.post">&lt;/b&gt;&lt;/span&gt;</str>
+      <!--     Paramètres de detail     -->
+      <str name="hl.fragsize">800</str>
+      <str name="hl.maxAnalyzedChars">1000000</str>
+      <str name="hl.snippets">8</str>
+      <str name="hl.snippets">8</str>
+      <str name="f.title.hl.fragsize">0</str>
+      <str name="f.title.hl.alternateField">title</str>
+      <str name="f.name.hl.fragsize">0</str>
+      <str name="f.name.hl.alternateField">name</str>
+      <str name="f.content.hl.snippets">3</str>
+      <str name="f.content.hl.fragsize">800</str>
+      <str name="f.content.hl.alternateField">content</str>
+      <str name="f.content.hl.maxAlternateFieldLength">750</str>
+
+      <!-- analyseur de requêtes (le plus complet, edismax, est choisi)  -->
+      <str name="defType">edismax</str>
+
+      <!-- boosts ou poids des champs lors du classement des documents retournés -->
+      <str name="qf">
+        synopsis^5.0 titre^10.0
+      </str>
+    </lst>
+  </requestHandler>
 </config>
