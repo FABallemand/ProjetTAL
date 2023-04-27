@@ -6,7 +6,7 @@
 #set( $normNames = {"genre_str" : "Genre", "predicted_genre_str" : "Genre (prédiction)"} )
 
 #if($response.facetFields.size() > 0)
-  <h2>Infos Éditoriales</h2>
+  <h2>Genre</h2>
 
   #foreach($field in $response.facetFields)
     ## Hide facets without value
