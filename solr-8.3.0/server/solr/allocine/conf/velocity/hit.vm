@@ -2,7 +2,7 @@
 
 
 <div class="result-document">
-  #set( $keeps = ["title", "description", "pubname", "pdate", "score"] )
+  #set( $keeps = ["titre", "synopsis", "genre", "predicted_genre","annee_prod"] )
 
   <table>
     #foreach( $fieldName in $doc.fieldNames )
