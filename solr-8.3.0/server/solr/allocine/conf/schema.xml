@@ -1,0 +1,28 @@
+<schema name="allocine_schema" version="1.6">
+  <fields>
+    <field name="acteur_1" type="string" indexed="true" stored="true" required="false" />
+    <field name="acteur_2" type="string" indexed="true" stored="true" required="false" />
+    <field name="acteur_3" type="string" indexed="true" stored="true" required="false" />
+    <field name="allocine_id" type="int" indexed="true" stored="true" required="false" />
+    <field name="annee_prod" type="int" indexed="true" stored="true" required="false" />
+    <field name="annee_sortie" type="int" indexed="true" stored="true" required="false" />
+    <field name="box_office_fr" type="int" indexed="true" stored="true" required="false" />
+    <field name="couleur" type="string" indexed="true" stored="true" required="false" />
+    <field name="duree" type="int" indexed="true" stored="true" required="false" />
+    <field name="langues" type="string" indexed="true" stored="true" required="false" />
+    <field name="nationalite" type="string" indexed="true" stored="true" required="false" />
+    <field name="nb_critiques_presse" type="int" indexed="true" stored="true" required="false" />
+    <field name="nb_critiques_spectateurs" type="int" indexed="true" stored="true" required="false" />
+    <field name="nb_notes_spectateurs" type="int" indexed="true" stored="true" required="false" />
+    <field name="note_presse" type="float" indexed="true" stored="true" required="false" />
+    <field name="note_spectateurs" type="float" indexed="true" stored="true" required="false" />
+    <field name="realisateurs" type="string" indexed="true" stored="true" required="false" />
+    <field name="synopsis" type="string" indexed="true" stored="true" required="true" />
+    <field name="titre" type="string" indexed="true" stored="true" required="true"/>
+    <field name="type_film" type="string" indexed="true" stored="true"required="false" />
+    <field name="genre" type="string" indexed="true" stored="true" required="true"/>
+    <field name="genre(predicted)" type="string" indexed="true" stored="true" required="true"/>
+  </fields>
+  <uniqueKey>titre</uniqueKey>
+</schema>
+
