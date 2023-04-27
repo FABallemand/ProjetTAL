@@ -1,0 +1,354 @@
+2023-04-27 17:39:36.552 INFO  (main) [   ] o.e.j.u.log Logging initialized @1400ms to org.eclipse.jetty.util.log.Slf4jLog
+2023-04-27 17:39:36.709 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.rewrite.handler.RedirectRegexRule.setReplacement(java.lang.String) in file:///home/fabien/TPS/2A/Algorithmes%20du%20Texte/ProjetTAL/solr-8.3.0/server/etc/jetty.xml
+2023-04-27 17:39:36.787 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
+2023-04-27 17:39:36.788 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.server.ServerConnector.setSoLingerTime(int) in file:///home/fabien/TPS/2A/Algorithmes%20du%20Texte/ProjetTAL/solr-8.3.0/server/etc/jetty-http.xml
+2023-04-27 17:39:36.801 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.19.v20190610; built: 2019-06-10T16:30:51.723Z; git: afcf563148970e98786327af5e07c261fda175d3; jvm 11.0.18+10-post-Ubuntu-0ubuntu122.04
+2023-04-27 17:39:36.836 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///home/fabien/TPS/2A/Algorithmes%20du%20Texte/ProjetTAL/solr-8.3.0/server/contexts/] at interval 0
+2023-04-27 17:39:37.216 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2023-04-27 17:39:37.233 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2023-04-27 17:39:37.233 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2023-04-27 17:39:37.235 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2023-04-27 17:39:37.376 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2023-04-27 17:39:37.389 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.3.0
+2023-04-27 17:39:37.389 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2023-04-27 17:39:37.389 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr
+2023-04-27 17:39:37.389 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2023-04-27T17:39:37.389695Z
+2023-04-27 17:39:37.468 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr/server/solr
+2023-04-27 17:39:37.479 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr/server/solr/solr.xml
+2023-04-27 17:39:37.575 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@771a660, but no JMX reporters were configured - adding default JMX reporter.
+2023-04-27 17:39:38.205 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2023-04-27 17:39:38.477 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@7cedfa63[provider=null,keyStore=null,trustStore=null]
+2023-04-27 17:39:38.477 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@7cedfa63[provider=null,keyStore=null,trustStore=null]
+2023-04-27 17:39:38.765 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@76d05cc9[provider=null,keyStore=null,trustStore=null]
+2023-04-27 17:39:38.765 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@76d05cc9[provider=null,keyStore=null,trustStore=null]
+2023-04-27 17:39:39.118 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2023-04-27 17:39:39.121 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2023-04-27 17:39:39.229 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@771a660
+2023-04-27 17:39:39.230 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@771a660
+2023-04-27 17:39:39.240 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@771a660
+2023-04-27 17:39:39.298 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr/server/solr
+2023-04-27 17:39:39.298 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [allocine]
+2023-04-27 17:39:39.384 INFO  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.c.SolrResourceLoader [allocine] Added 61 libs to classloader, from paths: [/home/fabien/TPS/2A/Algorithmes%20du%20Texte/ProjetTAL/solr/contrib/clustering/lib, /home/fabien/TPS/2A/Algorithmes%20du%20Texte/ProjetTAL/solr/contrib/extraction/lib, /home/fabien/TPS/2A/Algorithmes%20du%20Texte/ProjetTAL/solr/contrib/langid/lib, /home/fabien/TPS/2A/Algorithmes%20du%20Texte/ProjetTAL/solr/contrib/velocity/lib, /home/fabien/TPS/2A/Algorithmes%20du%20Texte/ProjetTAL/solr/dist]
+2023-04-27 17:39:39.396 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@43aaf813{/solr,file:///home/fabien/TPS/2A/Algorithmes%20du%20Texte/ProjetTAL/solr-8.3.0/server/solr-webapp/webapp/,AVAILABLE}{/home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr-8.3.0/server/solr-webapp/webapp}
+2023-04-27 17:39:39.410 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@6ed3f258{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2023-04-27 17:39:39.410 INFO  (main) [   ] o.e.j.s.Server Started @4261ms
+2023-04-27 17:39:39.758 INFO  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.3.0
+2023-04-27 17:39:39.939 WARN  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
+2023-04-27 17:39:40.033 INFO  (coreLoadExecutor-9-thread-1) [   x:allocine] o.a.s.s.IndexSchema [allocine] Schema name=default-config
+2023-04-27 17:39:40.634 ERROR (coreContainerWorkExecutor-2-thread-1) [   ] o.a.s.c.CoreContainer Error waiting for SolrCore to be loaded on startup => org.apache.solr.common.SolrException: Unable to create core [allocine]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1272)
+org.apache.solr.common.SolrException: Unable to create core [allocine]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1272) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:765) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.0.5.jar:4.0.5]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:210) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core allocine: Can't load schema /home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr/server/solr/allocine/conf/managed-schema: 'id' is not an indexed field:id{type=string,properties=stored,sortMissingLast,required,docValues,useDocValuesAsStored, required=true}
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:96) ~[?:?]
+	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1300) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1247) ~[?:?]
+	... 7 more
+Caused by: org.apache.solr.common.SolrException: Can't load schema /home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr/server/solr/allocine/conf/managed-schema: 'id' is not an indexed field:id{type=string,properties=stored,sortMissingLast,required,docValues,useDocValuesAsStored, required=true}
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:600) ~[?:?]
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:176) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:105) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:172) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45) ~[?:?]
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:70) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:118) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:91) ~[?:?]
+	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1300) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1247) ~[?:?]
+	... 7 more
+Caused by: java.lang.RuntimeException: 'id' is not an indexed field:id{type=string,properties=stored,sortMissingLast,required,docValues,useDocValuesAsStored, required=true}
+	at org.apache.solr.schema.IndexSchema.getIndexedField(IndexSchema.java:347) ~[?:?]
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:538) ~[?:?]
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:176) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:105) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:172) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45) ~[?:?]
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:70) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:118) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:91) ~[?:?]
+	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1300) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1247) ~[?:?]
+	... 7 more
+2023-04-27 17:39:45.751 ERROR (qtp1842853283-39) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'allocine' is not available due to init failure: Could not load conf for core allocine: Can't load schema /home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr/server/solr/allocine/conf/managed-schema: 'id' is not an indexed field:id{type=string,properties=stored,sortMissingLast,required,docValues,useDocValuesAsStored, required=true}
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1740)
+	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:257)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:542)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:424)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core allocine: Can't load schema /home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr/server/solr/allocine/conf/managed-schema: 'id' is not an indexed field:id{type=string,properties=stored,sortMissingLast,required,docValues,useDocValuesAsStored, required=true}
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:96)
+	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1300)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1247)
+	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:765)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:210)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	... 1 more
+Caused by: org.apache.solr.common.SolrException: Can't load schema /home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr/server/solr/allocine/conf/managed-schema: 'id' is not an indexed field:id{type=string,properties=stored,sortMissingLast,required,docValues,useDocValuesAsStored, required=true}
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:600)
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:176)
+	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:105)
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:172)
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45)
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:70)
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:118)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:91)
+	... 9 more
+Caused by: java.lang.RuntimeException: 'id' is not an indexed field:id{type=string,properties=stored,sortMissingLast,required,docValues,useDocValuesAsStored, required=true}
+	at org.apache.solr.schema.IndexSchema.getIndexedField(IndexSchema.java:347)
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:538)
+	... 16 more
+
+2023-04-27 17:39:45.751 ERROR (qtp1842853283-19) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'allocine' is not available due to init failure: Could not load conf for core allocine: Can't load schema /home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr/server/solr/allocine/conf/managed-schema: 'id' is not an indexed field:id{type=string,properties=stored,sortMissingLast,required,docValues,useDocValuesAsStored, required=true}
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1740)
+	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:257)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:542)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:424)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core allocine: Can't load schema /home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr/server/solr/allocine/conf/managed-schema: 'id' is not an indexed field:id{type=string,properties=stored,sortMissingLast,required,docValues,useDocValuesAsStored, required=true}
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:96)
+	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1300)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1247)
+	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:765)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:210)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	... 1 more
+Caused by: org.apache.solr.common.SolrException: Can't load schema /home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr/server/solr/allocine/conf/managed-schema: 'id' is not an indexed field:id{type=string,properties=stored,sortMissingLast,required,docValues,useDocValuesAsStored, required=true}
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:600)
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:176)
+	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:105)
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:172)
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45)
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:70)
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:118)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:91)
+	... 9 more
+Caused by: java.lang.RuntimeException: 'id' is not an indexed field:id{type=string,properties=stored,sortMissingLast,required,docValues,useDocValuesAsStored, required=true}
+	at org.apache.solr.schema.IndexSchema.getIndexedField(IndexSchema.java:347)
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:538)
+	... 16 more
+
+2023-04-27 17:39:45.753 ERROR (qtp1842853283-17) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'allocine' is not available due to init failure: Could not load conf for core allocine: Can't load schema /home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr/server/solr/allocine/conf/managed-schema: 'id' is not an indexed field:id{type=string,properties=stored,sortMissingLast,required,docValues,useDocValuesAsStored, required=true}
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1740)
+	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:257)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:542)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:424)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core allocine: Can't load schema /home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr/server/solr/allocine/conf/managed-schema: 'id' is not an indexed field:id{type=string,properties=stored,sortMissingLast,required,docValues,useDocValuesAsStored, required=true}
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:96)
+	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1300)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1247)
+	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:765)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:210)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	... 1 more
+Caused by: org.apache.solr.common.SolrException: Can't load schema /home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr/server/solr/allocine/conf/managed-schema: 'id' is not an indexed field:id{type=string,properties=stored,sortMissingLast,required,docValues,useDocValuesAsStored, required=true}
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:600)
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:176)
+	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:105)
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:172)
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45)
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:70)
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:118)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:91)
+	... 9 more
+Caused by: java.lang.RuntimeException: 'id' is not an indexed field:id{type=string,properties=stored,sortMissingLast,required,docValues,useDocValuesAsStored, required=true}
+	at org.apache.solr.schema.IndexSchema.getIndexedField(IndexSchema.java:347)
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:538)
+	... 16 more
+
+2023-04-27 17:39:45.759 ERROR (qtp1842853283-22) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'allocine' is not available due to init failure: Could not load conf for core allocine: Can't load schema /home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr/server/solr/allocine/conf/managed-schema: 'id' is not an indexed field:id{type=string,properties=stored,sortMissingLast,required,docValues,useDocValuesAsStored, required=true}
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1740)
+	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:257)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:542)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:424)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core allocine: Can't load schema /home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr/server/solr/allocine/conf/managed-schema: 'id' is not an indexed field:id{type=string,properties=stored,sortMissingLast,required,docValues,useDocValuesAsStored, required=true}
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:96)
+	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1300)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1247)
+	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:765)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:210)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	... 1 more
+Caused by: org.apache.solr.common.SolrException: Can't load schema /home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr/server/solr/allocine/conf/managed-schema: 'id' is not an indexed field:id{type=string,properties=stored,sortMissingLast,required,docValues,useDocValuesAsStored, required=true}
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:600)
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:176)
+	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:105)
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:172)
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45)
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:70)
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:118)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:91)
+	... 9 more
+Caused by: java.lang.RuntimeException: 'id' is not an indexed field:id{type=string,properties=stored,sortMissingLast,required,docValues,useDocValuesAsStored, required=true}
+	at org.apache.solr.schema.IndexSchema.getIndexedField(IndexSchema.java:347)
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:538)
+	... 16 more
+
+2023-04-27 17:39:45.759 INFO  (qtp1842853283-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1682617185516} status=0 QTime=75
+2023-04-27 17:39:45.830 INFO  (qtp1842853283-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1682617185517} status=0 QTime=152
+2023-04-27 17:40:54.058 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@6ed3f258{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2023-04-27 17:40:54.059 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2023-04-27 17:40:54.063 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1721576219
+2023-04-27 17:40:54.067 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2023-04-27 17:40:54.070 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@62d73ead: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@5050726e
+2023-04-27 17:40:54.080 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2023-04-27 17:40:54.081 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@4eed2acf: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@e174d3b
+2023-04-27 17:40:54.084 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2023-04-27 17:40:54.084 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@36fc05ff: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@626fd5ff
+2023-04-27 17:40:54.096 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@43aaf813{/solr,null,UNAVAILABLE}{/home/fabien/TPS/2A/Algorithmes du Texte/ProjetTAL/solr-8.3.0/server/solr-webapp/webapp}
