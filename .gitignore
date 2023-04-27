@@ -11,3 +11,5 @@
 *.out
 *.toc
 *.log
+
+model/*
