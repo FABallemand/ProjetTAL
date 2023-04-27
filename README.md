@@ -16,6 +16,9 @@ Le projet se décompose en deux parties:
 - [Imbalanced-Learn](https://imbalanced-learn.org/stable/)
 - [Tensorflow](https://www.tensorflow.org/?hl=fr)
 
+### 🔎 Ressources Solr
+- [ri_atexte](https://git.unistra.fr/ruizfabo/ri_atexte)
+
 ### 📚 Articles
 
 ## 👥 Equipe
@@ -27,19 +30,18 @@ Le projet se décompose en deux parties:
 - [ ] https://fasttext.cc/docs/en/crawl-vectors.html
 - [ ] Tokénisation données = tokénisation plongement (mot hors vocabulaire)
 
-## Usage
+## 🛠 Usage
 
-### Solr Commands
-> ./bin/solr create -c allocine # only first use
-> ./bin/solr start
-> curl http://localhost:8983/solr/allocine/update/csv --data-binary @../data/test_results.csv -H 'Content-type:text/plain; charset=utf-8'
-> curl "http://localhost:8983/solr/allocine/update?commit=true"
-> http://localhost:8983/solr/allocine/select?q=titre%3Astar
-> http://localhost:8983/solr/allocine/browse?q=titre%3Astar
-> ./bin/solr stop
+### 🔎 Solr Commands
+> ./bin/solr create -c allocine # only first use  
+> ./bin/solr start  
+> curl http://localhost:8983/solr/allocine/update/csv --data-binary @../data/test_results.csv -H 'Content-type:text/plain; charset=utf-8'  
+> curl "http://localhost:8983/solr/allocine/update?commit=true"  
+> http://localhost:8983/solr/allocine/select?q=titre%3Astar  
+> http://localhost:8983/solr/allocine/browse?q=titre%3Astar  
+> ./bin/solr stop  
 
-
-## Résultats
+## 📊 Résultats
 - Basic methode -- 66% of accuracy with random forest
 - CNN -- 72.91% of accuracy
 - LSTM -- 74.51% of accuracy

@@ -3,7 +3,7 @@
  *  e.g.: fields specified by &facet.field=
  *#
 
-#set( $normNames = {"pubname_str" : "Publication", "pdate" : "Date"} )
+#set( $normNames = {"genre_str" : "Genre", "predicted_genre_str" : "Genre (prédiction)"} )
 
 #if($response.facetFields.size() > 0)
   <h2>Infos Éditoriales</h2>
@@ -11,7 +11,7 @@
   #foreach($field in $response.facetFields)
     ## Hide facets without value
     #if($field.values.size() > 0)
-      #if($field.name == 'pdate' || $field.name == "pubname_str")
+      #if($field.name == "genre_str" || $field.name == "predicted_genre_str")
 
       <!-- <span class="facet-field"><h3>$field.name</h3></span> -->
       <span class="facet-field"><h3>$normNames.get($field.name)</h3></span>
