@@ -22,4 +22,10 @@ Le projet se décompose en deux parties:
 - [ ] Vérifier l'encodage
 - [ ] https://fasttext.cc/docs/en/crawl-vectors.html
 - [ ] Tokénisation données = tokénisation plongement (mot hors vocabulaire)
-- [ ] 
+
+
+## RESULTAT TEMP
+
+- Basic methode -- 66% of accuracy with random forest
+- CNN -- 72.91% of accuracy
+- LSTM -- 74.51% of accuracy
