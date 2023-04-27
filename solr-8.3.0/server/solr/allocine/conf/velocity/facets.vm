@@ -3,7 +3,7 @@
  *  e.g.: fields specified by &facet.field=
  *#
 
-#set( $normNames = {"enti_location_str" : "Lieux", "enti_organization_str" : "Organisations"} )
+#set( $normNames = {"langues_str" : "Langue", "nationalite_str" : "Nationalité", "realisateurs_str" : "Réalisateur"} )
 
 #if($response.facetFields.size() > 0)
   <h2>Annotations TAL</h2>
@@ -11,7 +11,7 @@
   #foreach($field in $response.facetFields)
     ## Hide facets without value
     #if($field.values.size() > 0)
-      #if($field.name == 'enti_location_str' || $field.name == "enti_organization_str")
+      #if($field.name == 'langues_str' || $field.name == "nationalite_str" || $field.name == "realisateurs_str")
 
       <!--<span class="facet-field"><h3>$field.name</h3></span>-->
       <span class="facet-field"><h3>$normNames.get($field.name)</h3></span>
