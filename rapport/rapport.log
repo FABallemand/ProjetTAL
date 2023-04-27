@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.7.18)  8 MAR 2023 11:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.7.18)  27 APR 2023 12:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -707,6 +707,44 @@ Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
 \WF@everypar=\toks42
 Package: wrapfig 2003/01/31  v 3.6
 )
+(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen276
+\captionmargin@=\dimen277
+\captionwidth=\dimen278
+\caption@tempdima=\dimen279
+\caption@indent=\dimen280
+\caption@parindent=\dimen281
+\caption@hangindent=\dimen282
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count323
+\c@continuedfloat=\count324
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: wrapfig package is loaded.
+)
+\c@KVtest=\count325
+\sf@farskip=\skip63
+\sf@captopadj=\dimen283
+\sf@capskip=\skip64
+\sf@nearskip=\skip65
+\c@subfigure=\count326
+\c@subfigure@save=\count327
+\c@lofdepth=\count328
+\c@subtable=\count329
+\c@subtable@save=\count330
+\c@lotdepth=\count331
+\sf@top=\skip66
+\sf@bottom=\skip67
+)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibraryarrows.code.tex
 File: tikzlibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
@@ -714,7 +752,7 @@ File: tikzlibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.
 tex
 File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\arrowsize=\dimen276
+\arrowsize=\dimen284
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarycalc.code.tex
@@ -802,14 +840,14 @@ zlibrarydecorations.shapes.code.tex
 zlibrarydecorations.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.cod
 e.tex
-\pgfdecoratedcompleteddistance=\dimen277
-\pgfdecoratedremainingdistance=\dimen278
-\pgfdecoratedinputsegmentcompleteddistance=\dimen279
-\pgfdecoratedinputsegmentremainingdistance=\dimen280
-\pgf@decorate@distancetomove=\dimen281
-\pgf@decorate@repeatstate=\count323
-\pgfdecorationsegmentamplitude=\dimen282
-\pgfdecorationsegmentlength=\dimen283
+\pgfdecoratedcompleteddistance=\dimen285
+\pgfdecoratedremainingdistance=\dimen286
+\pgfdecoratedinputsegmentcompleteddistance=\dimen287
+\pgfdecoratedinputsegmentremainingdistance=\dimen288
+\pgf@decorate@distancetomove=\dimen289
+\pgf@decorate@repeatstate=\count332
+\pgfdecorationsegmentamplitude=\dimen290
+\pgfdecorationsegmentlength=\dimen291
 )
 \tikz@lib@dec@box=\box99
 )
@@ -848,7 +886,7 @@ Library (tcolorbox): 'tcbprocessing.code.tex' version '5.0.2'
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
 Package shellesc Info: Restricted shell escape enabled on input line 77.
 ))
-\c@tcblisting=\count324
+\c@tcblisting=\count333
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
 Library (tcolorbox): 'tcbskins.code.tex' version '5.0.2'
@@ -867,30 +905,30 @@ Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count325
+\l__color_backend_stack_int=\count334
 \l__pdf_internal_box=\box106
 )
 (./rapport.aux)
 \openout1 = `rapport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -928,16 +966,16 @@ LaTeX Font Info:    ... okay on input line 95.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count326
-\scratchdimen=\dimen284
+\scratchcounter=\count335
+\scratchdimen=\dimen292
 \scratchbox=\box107
-\nofMPsegments=\count327
-\nofMParguments=\count328
+\nofMPsegments=\count336
+\nofMParguments=\count337
 \everyMPshowfont=\toks43
-\MPscratchCnt=\count329
-\MPscratchDim=\dimen285
-\MPnumerator=\count330
-\makeMPintoPDFobject=\count331
+\MPscratchCnt=\count338
+\MPscratchDim=\dimen293
+\MPnumerator=\count339
+\makeMPintoPDFobject=\count340
 \everyMPtoPDFconversion=\toks44
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -948,8 +986,8 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count332
-Package hyperref Info: Link coloring OFF on input line 95.
+\c@lstlisting=\count341
+Package hyperref Info: Link coloring OFF on input line 96.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -960,28 +998,28 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count333
+\c@section@level=\count342
 )
-LaTeX Info: Redefining \ref on input line 95.
-LaTeX Info: Redefining \pageref on input line 95.
-LaTeX Info: Redefining \nameref on input line 95.
+LaTeX Info: Redefining \ref on input line 96.
+LaTeX Info: Redefining \pageref on input line 96.
+LaTeX Info: Redefining \nameref on input line 96.
 
 (./rapport.out) (./rapport.out)
 \@outlinefile=\write4
 \openout4 = `rapport.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 95.
-Package microtype Info: Applying patch `item' on input line 95.
-Package microtype Info: Applying patch `toc' on input line 95.
-Package microtype Info: Applying patch `eqnum' on input line 95.
-Package microtype Info: Applying patch `footnote' on input line 95.
+LaTeX Info: Redefining \microtypecontext on input line 96.
+Package microtype Info: Applying patch `item' on input line 96.
+Package microtype Info: Applying patch `toc' on input line 96.
+Package microtype Info: Applying patch `eqnum' on input line 96.
+Package microtype Info: Applying patch `footnote' on input line 96.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 95.
+LaTeX Info: Redefining \showhyphens on input line 96.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: Adjustment of character kerning enabled.
@@ -992,7 +1030,10 @@ Package microtype Info: Redefining babel's language switching commands.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 111
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 112
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -1001,7 +1042,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 111
+LaTeX Font Info:    Trying to load font information for U+msb on input line 112
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1010,10 +1051,10 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-<img/logo_UFR_2.png, id=46, 233.87375pt x 93.34875pt>
+<img/logo_UFR_2.png, id=59, 233.87375pt x 93.34875pt>
 File: img/logo_UFR_2.png Graphic file (type png)
 <use img/logo_UFR_2.png>
-Package pdftex.def Info: img/logo_UFR_2.png  used on input line 117.
+Package pdftex.def Info: img/logo_UFR_2.png  used on input line 118.
 (pdftex.def)             Requested size: 233.87315pt x 93.34851pt.
  [1
 
@@ -1022,10 +1063,10 @@ rapport.toc)
 \tf@toc=\write5
 \openout5 = `rapport.toc'.
 
-<img/logo_UFR_1.png, id=61, 1606.0pt x 291.0875pt>
+<img/logo_UFR_1.png, id=78, 1606.0pt x 291.0875pt>
 File: img/logo_UFR_1.png Graphic file (type png)
 <use img/logo_UFR_1.png>
-Package pdftex.def Info: img/logo_UFR_1.png  used on input line 127.
+Package pdftex.def Info: img/logo_UFR_1.png  used on input line 128.
 (pdftex.def)             Requested size: 128.48262pt x 23.28746pt.
 
 
@@ -1042,7 +1083,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: img/logo_UFR_1.png Graphic file (type png)
 <use img/logo_UFR_1.png>
-Package pdftex.def Info: img/logo_UFR_1.png  used on input line 132.
+Package pdftex.def Info: img/logo_UFR_1.png  used on input line 133.
 (pdftex.def)             Requested size: 128.48262pt x 23.28746pt.
 
 
@@ -1053,10 +1094,30 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-14.8875pt}.
 
-[3] (./src/intro.tex)
+[3] (./src/intro.tex) (./src/analyse_donnees.tex
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmss' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+<img/value_counts.png, id=103, 1040.88875pt x 324.21124pt>
+File: img/value_counts.png Graphic file (type png)
+<use img/value_counts.png>
+Package pdftex.def Info: img/value_counts.png  used on input line 10.
+(pdftex.def)             Requested size: 312.26903pt x 97.26411pt.
+<img/imbalanced.png, id=106, 338.26375pt x 287.0725pt>
+File: img/imbalanced.png Graphic file (type png)
+<use img/imbalanced.png>
+Package pdftex.def Info: img/imbalanced.png  used on input line 20.
+(pdftex.def)             Requested size: 142.26378pt x 120.73607pt.
+<img/balanced.png, id=107, 338.26375pt x 287.0725pt>
+File: img/balanced.png Graphic file (type png)
+<use img/balanced.png>
+Package pdftex.def Info: img/balanced.png  used on input line 22.
+(pdftex.def)             Requested size: 142.26378pt x 120.73607pt.
+) (./src/methodes_basiques.tex
 File: img/logo_UFR_1.png Graphic file (type png)
 <use img/logo_UFR_1.png>
-Package pdftex.def Info: img/logo_UFR_1.png  used on input line 137.
+Package pdftex.def Info: img/logo_UFR_1.png  used on input line 6.
 (pdftex.def)             Requested size: 128.48262pt x 23.28746pt.
 
 
@@ -1067,10 +1128,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-14.8875pt}.
 
-[1] (./src/conclusion.tex)
+[1 <./img/value_counts.png>]
+<img/pipeline_1.png, id=121, 1041.8925pt x 634.37pt>
+File: img/pipeline_1.png Graphic file (type png)
+<use img/pipeline_1.png>
+Package pdftex.def Info: img/pipeline_1.png  used on input line 9.
+(pdftex.def)             Requested size: 312.57016pt x 190.31245pt.
 File: img/logo_UFR_1.png Graphic file (type png)
 <use img/logo_UFR_1.png>
-Package pdftex.def Info: img/logo_UFR_1.png  used on input line 151.
+Package pdftex.def Info: img/logo_UFR_1.png  used on input line 17.
 (pdftex.def)             Requested size: 128.48262pt x 23.28746pt.
 
 
@@ -1081,14 +1147,78 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-14.8875pt}.
 
-[2] (./rapport.bbl
+[2 <./img/imbalanced.png> <./img/balanced.png> <./img/pipeline_1.png>]
+<img/pipeline_2.png, id=134, 1043.9pt x 420.57124pt>
+File: img/pipeline_2.png Graphic file (type png)
+<use img/pipeline_2.png>
+Package pdftex.def Info: img/pipeline_2.png  used on input line 29.
+(pdftex.def)             Requested size: 313.17241pt x 126.17235pt.
 
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.37 ...e du classifieur. On utilise la méthode _
+                                                  textsf{StratifiedKFold} de...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
+
+LaTeX Warning: Command \' invalid in math mode on input line 37.
+
+! Please use \mathaccent for accents in math mode.
+\MT@orig@add@accent ...gnorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.37 ...d} de Scikit-Learn qui a la particularité
+                                                   de conserver la proportio...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.38 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (70.28595pt too wide) in paragraph at lines 37--38
+[]\OML/cmm/m/it/10 extsf[]deScikit \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 Learnq
+uialaparticularit[]deconserverlaproportiond[]individusdechaqueclassedanslesplis
+:$ 
+ []
+
+
+LaTeX Warning: Reference `omparaison' on page 3 undefined on input line 39.
+
+<img/comparaison.png, id=135, 500.87125pt x 248.93pt>
+File: img/comparaison.png Graphic file (type png)
+<use img/comparaison.png>
+Package pdftex.def Info: img/comparaison.png  used on input line 43.
+(pdftex.def)             Requested size: 250.435pt x 124.46469pt.
+) (./src/conclusion.tex)
+File: img/logo_UFR_1.png Graphic file (type png)
+<use img/logo_UFR_1.png>
+Package pdftex.def Info: img/logo_UFR_1.png  used on input line 146.
+(pdftex.def)             Requested size: 128.48262pt x 23.28746pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 26.8875pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.8875pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-14.8875pt}.
+
+[3 <./img/pipeline_2.png> <./img/comparaison.png>] (./rapport.bbl
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 )
 File: img/logo_UFR_1.png Graphic file (type png)
 <use img/logo_UFR_1.png>
-Package pdftex.def Info: img/logo_UFR_1.png  used on input line 157.
+Package pdftex.def Info: img/logo_UFR_1.png  used on input line 152.
 (pdftex.def)             Requested size: 128.48262pt x 23.28746pt.
 
 
@@ -1099,25 +1229,37 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-14.8875pt}.
 
-[3] (./rapport.aux)
+[4] (./rapport.aux)
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `rapport.out' has not changed.
-(rerunfilecheck)             Checksum: 5836C3B3793E83254C79422A2400E3A5;439.
+(rerunfilecheck)             Checksum: 0D3472F4F9B10A064654FB8110961035;1324.
  ) 
 Here is how much of TeX's memory you used:
- 32004 strings out of 480204
- 654699 string characters out of 5895010
- 1005588 words of memory out of 5000000
- 49380 multiletter control sequences out of 15000+600000
- 472934 words of font info for 54 fonts, out of 8000000 for 9000
+ 33560 strings out of 480204
+ 684344 string characters out of 5895010
+ 1044366 words of memory out of 5000000
+ 50830 multiletter control sequences out of 15000+600000
+ 476796 words of font info for 91 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 83i,16n,89p,1004b,358s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on rapport.pdf (6 pages, 80440 bytes).
+ 83i,17n,89p,1004b,461s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/fabien/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.60
+0pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmtt10.pfb>
+Output written on rapport.pdf (7 pages, 325034 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
- 69 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
- 14487 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 216 PDF objects out of 1000 (max. 8388607)
+ 150 compressed objects within 2 object streams
+ 29 named destinations out of 1000 (max. 500000)
+ 27341 words of extra memory for PDF output out of 29859 (max. 10000000)
 

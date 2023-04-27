@@ -9,7 +9,11 @@ Le projet se décompose en deux parties:
 ## 📎 Ressources
 
 ### 📦 Bibliotèques Python
+- [Pandas](https://pandas.pydata.org/)
+- [Numpy](https://numpy.org/)
+- [Matplotlib](https://matplotlib.org/)
 - [Scikit-Learn](https://scikit-learn.org/stable/)
+- [Imbalanced-Learn](https://imbalanced-learn.org/stable/)
 - [Tensorflow](https://www.tensorflow.org/?hl=fr)
 
 ### 📚 Articles

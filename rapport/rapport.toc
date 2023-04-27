@@ -1,5 +1,8 @@
 \babel@toc {nil}{}\relax 
-\contentsline {section}{Liste des figures}{iii}{section*.1}%
-\contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
-\contentsline {section}{\numberline {2}Conclusion}{2}{section.2}%
-\contentsline {section}{Bibliographie}{3}{section.2}%
+\contentsline {section}{Liste des figures}{iii}{section*.2}%
+\contentsline {section}{\numberline {1}Analyse et Pré-traitement des Données}{1}{section.1}%
+\contentsline {section}{\numberline {2}Méthodes Basiques}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Pré-traitement des Données}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Apprentissage Simple}{2}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Apprentissage par Plis et Comparaison des Algorithmes}{3}{subsection.2.3}%
+\contentsline {section}{Bibliographie}{4}{section*.10}%
