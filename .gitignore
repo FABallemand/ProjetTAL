@@ -1,3 +1,13 @@
 */.ipynb_checkpoints/*
 *.zip
 *.bin
+
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.out
+*.toc
+*.log
