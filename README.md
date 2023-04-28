@@ -6,6 +6,47 @@ Le projet se décompose en deux parties:
 - Prédiction du genre des films par TAL
 - Visualisation des résultats
 
+## 🛠 Usage
+- Le dossier **notebooks** contient les fichiers consacrés à l'analyse des données et au TAL.
+- Le dossier **solr-8.3.0** contient une installation de Solr modifiée pour répondre aux besoins du projet.
+- Le dossier **rapport** contient le rapport détaillé du projet.
+
+### 🐍 Notebooks Python
+Les notebooks Python contiennent les commandes pour analyser et traiter les données, entraîner et tester différents modèles mais aussi effectuer des prédictions avec le modèle final choisi. Ils sont à considérer dans l'ordre suivant:
+- Analyse_donnees.ipynb
+- Methodes_basiques.ipynb
+- CNN.ipynb
+- BILSTM.ipynb
+- Transformers.ipynb (très difficile à exécuter avec un ordinateur lambda)
+
+**Remarque:** les fichiers dont le nom commencent par **test_** sont des fichiers de test.
+
+### 🔎 Solr
+- Depuis la racine de Solr (**solr-8.3.0**):
+    - Lancer le serveur Solr:
+    ```bash
+    ./bin/solr start
+    ```
+    - Charger les données:
+    ```bash
+    curl http://localhost:8983/solr/allocine/update/csv --data-binary @../data/test_results.csv -H 'Content-type:text/plain; charset=utf-8'
+    curl "http://localhost:8983/solr/allocine/update?commit=true"
+    ```
+    - Arrêter le serveur Solr:
+    ```bash
+    ./bin/solr stop
+    ```
+- Depuis la barre de recherche d'un navigateur web:
+    - Accéder à l'interface de gestion de Solr:
+    ```url
+    localhost:8983
+    ```
+    - Effectuer une requête (deux méthodes, browse permet d'avoir une interface plus travaillée):
+    ```url
+    http://localhost:8983/solr/allocine/select?q=titre%3Astar
+    http://localhost:8983/solr/allocine/browse?q=titre%3Astar
+    ```
+
 ## 📎 Ressources
 
 ### 📦 Bibliotèques Python
@@ -16,10 +57,11 @@ Le projet se décompose en deux parties:
 - [Imbalanced-Learn](https://imbalanced-learn.org/stable/)
 - [Tensorflow](https://www.tensorflow.org/?hl=fr)
 
+### 📚 Ressources TAL
+- [Hugging Face](https://huggingface.co/models)
+
 ### 🔎 Ressources Solr
 - [ri_atexte](https://git.unistra.fr/ruizfabo/ri_atexte)
-
-### 📚 Articles
 
 ## 👥 Equipe
 - ALLEMAND Fabien
@@ -29,17 +71,6 @@ Le projet se décompose en deux parties:
 - [ ] Vérifier l'encodage
 - [ ] https://fasttext.cc/docs/en/crawl-vectors.html
 - [ ] Tokénisation données = tokénisation plongement (mot hors vocabulaire)
-
-## 🛠 Usage
-
-### 🔎 Solr Commands
-> ./bin/solr create -c allocine # only first use  
-> ./bin/solr start  
-> curl http://localhost:8983/solr/allocine/update/csv --data-binary @../data/test_results.csv -H 'Content-type:text/plain; charset=utf-8'  
-> curl "http://localhost:8983/solr/allocine/update?commit=true"  
-> http://localhost:8983/solr/allocine/select?q=titre%3Astar  
-> http://localhost:8983/solr/allocine/browse?q=titre%3Astar  
-> ./bin/solr stop  
 
 ## 📊 Résultats
 - Basic methode -- 66% of accuracy with random forest

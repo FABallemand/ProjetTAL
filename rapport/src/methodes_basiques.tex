@@ -1,7 +1,7 @@
 \section{Méthodes Basiques}
 
 \subsection{Pré-traitement des Données}
-Il est possible de mettre en place une pipeline \ref{pipeline_1} afin de vectoriser les données d'apprentissage et d'en extraire des informations statistiques.\\
+Il est possible de mettre en place une pipeline (Figure \ref{pipeline_1}) afin de vectoriser les données d'apprentissage et d'en extraire des informations statistiques.\\
 Dans cette pipeline, les données déjà tokénisées vont être vectorisées selon la méthode TF-IDF en supprimant les stop-words. Puis des objets \textsf{FUnctiontransformer} et \textsf{DictVectorizer} de la bibliotèque Scikit-learn \cite{scikit_learn} vont être utilisés pour obtenir les valeurs statistiques telles que la longeur du synopsis en nombre de mot et en nombre de phrases. Un \textsf{MinMaxScaler} est utilisé pour normaliser ces données afin qu'elles aient le même poids lors de l'apprentissage.
 
 \begin{figure}
@@ -22,7 +22,7 @@ Avant tout apprentissage supervisé, il faut définir un jeu d'apprentissage et 
 Le jeu de données \textit{allocine\_genres\_test.csv} correspond au jeu de validation qui ne sera utilisé qu'après avoir définitivement choisi la méthode de prédiction.
 \end{minipage}
 
-Il est alors possible de créer une nouvelle pipeline pour automatiser le pré-traitement et l'apprentissage \ref{pipeline_2}.
+Il est alors possible de créer une nouvelle pipeline pour automatiser le pré-traitement et l'apprentissage (Figure \ref{pipeline_2}).
 
 \begin{figure}
     \center
@@ -34,9 +34,9 @@ Il est alors possible de créer une nouvelle pipeline pour automatiser le pré-t
 On peut ensuite faire des prédictions sur le jeu de test avec la méthode \textsf{predict} pour évaluer le modèle. Ce modèle de régression logistique donne une précision de 0.6 et un rappel de 0.61 (donc un score f1 de 0.6).
 
 \subsection{Apprentissage par Plis et Comparaison des Algorithmes}
-Comme vu précédemment, la taille et les individus sélectionnés pour entrainer le modèle peuevent avoir une influence sur la qualité de l'apprentissage. Pour contrer ce biais on peut utiliser des plis pour l'apprentissage: au lieu de diviser les données d'entraînement en un jeu d'entrainement et un jeu de test, on peut diviser les données d'entraînements en plusieurs plis qui seront tour à tour des données d'entraînement ou de test. Celà permet d'obtenir une idée de la performance moyenne du classifieur. On utilise la méthode _textsf{StratifiedKFold} de Scikit-Learn qui a la particularité de conserver la proportion d'individus de chaque classe dans les plis.
+Comme vu précédemment, la taille et les individus sélectionnés pour entrainer le modèle peuevent avoir une influence sur la qualité de l'apprentissage. Pour contrer ce biais on peut utiliser des plis pour l'apprentissage: au lieu de diviser les données d'entraînement en un jeu d'entrainement et un jeu de test, on peut diviser les données d'entraînements en plusieurs plis qui seront tour à tour des données d'entraînement ou de test. Celà permet d'obtenir une idée de la performance moyenne du classifieur. On utilise la méthode \textsf{StratifiedKFold} de Scikit-Learn qui a la particularité de conserver la proportion d'individus de chaque classe dans les plis.
 
-En utilisant cette méthode, on peut comparer le modèle de régression logistique avec d'autres algorithmes. Les meilleurs résultats proviennent d'un modèle de forêt aléatoire (précision proche de 0.7). \ref{omparaison}
+En utilisant cette méthode, on peut comparer le modèle de régression logistique avec d'autres algorithmes. Les meilleurs résultats proviennent d'un modèle de forêt aléatoire (précision proche de 0.7). (Figure \ref{comparaison})
 
 \begin{figure}
     \center
