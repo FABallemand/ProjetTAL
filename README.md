@@ -41,7 +41,7 @@ Les notebooks Python contiennent les commandes pour analyser et traiter les donn
     ```url
     localhost:8983
     ```
-    - Effectuer une requête (deux méthodes, browse permet d'avoir une interface plus travaillée):
+    - Effectuer une requête sur le mot "star" (deux méthodes, browse permet d'avoir une interface plus travaillée):
     ```url
     http://localhost:8983/solr/allocine/select?q=titre%3Astar
     http://localhost:8983/solr/allocine/browse?q=titre%3Astar

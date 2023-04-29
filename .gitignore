@@ -12,4 +12,6 @@
 *.toc
 *.log
 
-partie1/model/*
+notebooks/model/*
+
+solr-8.3.0/server/logs/*
