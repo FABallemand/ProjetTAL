@@ -71,8 +71,12 @@ Les notebooks Python contiennent les commandes pour analyser et traiter les donn
 - [ ] Vérifier l'encodage
 - [ ] https://fasttext.cc/docs/en/crawl-vectors.html
 - [ ] Tokénisation données = tokénisation plongement (mot hors vocabulaire)
+- [ ] Relancer modèles pour mettre à jour rapport
 
 ## 📊 Résultats
-- Basic methode -- 66% of accuracy with random forest
-- CNN -- 72.91% of accuracy
-- LSTM -- 74.51% of accuracy
+Précision pendant l'entraînement:
+- Basic methode -- 68.85% (random forest)
+- CNN -- 51.56%
+- CNN (avec oversampling) -- 72.91%
+- LSTM -- 74.51%
+- Transformer -- ???%
