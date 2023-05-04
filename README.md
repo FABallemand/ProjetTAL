@@ -75,8 +75,11 @@ Les notebooks Python contiennent les commandes pour analyser et traiter les donn
 
 ## 📊 Résultats
 Précision pendant l'entraînement:
-- Basic methode -- 68.85% (random forest)
-- CNN -- 51.56%
-- CNN (avec oversampling) -- 72.91%
-- LSTM -- 74.51%
+- Basic methode -- 12% (Baselien)
+- Basic methode -- 59% (Mutinomial NB)
+- Basic methode -- 58% (CART)
+- Basic methode -- 73% (LR)
+- Basic methode -- 69% (random forest)
+- CNN (avec oversampling) -- 75.29 (+- 0.77) --> 51% on test set
+- LSTM -- 76.60%
 - Transformer -- ???%
