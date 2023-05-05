@@ -32,11 +32,11 @@ Après plusieurs expériences avec différentes architectures, il semblerait qu'
 \end{minipage}
 
 Les opérations de convolution du CNN sont des opérations qui doivent être apprises au cours de l'entraînement. \cite{convolution} La taille des batchs est de 64 et le nombre d'epochs choisi est 25, permettant un apprentissage plus précis mais aussi plus long. Pour contrer cela, un callback de type \textsf{EarlyStopping} a été ajouté (arrêt de l'apprentissage lorsque la précision du modèle diminue).\\
-Le réseau neuronal convolutif obtenu a une précision de 72.91\%.
+Le réseau neuronal convolutif obtenu a une précision de 5.31\%.
 
 \begin{figure}
     \center
-    \includegraphics[scale=.3]{img/accuracy_cnn.png}
+    \includegraphics[scale=.4]{img/accuracy_cnn.png}
     \caption{Précision du réseau neuronal convolutif au cours de l'entraînement}
     \label{accuracy_cnn}
 \end{figure}

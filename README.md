@@ -68,18 +68,17 @@ Les notebooks Python contiennent les commandes pour analyser et traiter les donn
 - LEBOT Samuel
 
 ## 📝 To Do list
-- [ ] Vérifier l'encodage
-- [ ] https://fasttext.cc/docs/en/crawl-vectors.html
-- [ ] Tokénisation données = tokénisation plongement (mot hors vocabulaire)
-- [ ] Relancer modèles pour mettre à jour rapport
+- [x] Relancer modèles pour mettre à jour rapport
 
 ## 📊 Résultats
 Précision pendant l'entraînement:
-- Basic methode -- 12% (Baselien)
-- Basic methode -- 59% (Mutinomial NB)
-- Basic methode -- 58% (CART)
-- Basic methode -- 73% (LR)
-- Basic methode -- 69% (random forest)
-- CNN (avec oversampling) -- 75.29 (+- 0.77) --> 51% on test set
+- Méthodes basiques -- 12% (Baseline)
+- Méthodes basiques -- 59% (Mutinomial NB)
+- Méthodes basiques -- 58% (CART)
+- Méthodes basiques -- 73% (LR)
+- Méthodes basiques -- 69% (Random Forest)
+- CNN (avec oversampling) -- 75.29 (+- 0.77)
 - LSTM -- 76.60%
 - Transformer -- ???%
+
+Le modèle qui donne les meilleurs résultats est le CNN (le LSTM donne des résultats similaires mais avec un temps de calcul nettement supérieur). On obtient une **précision de 51% sur le jeu de test**.
